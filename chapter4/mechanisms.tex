@@ -1,0 +1,886 @@
+\chapter{How shifting investment impacts employment: three determinants under scrutiny} \label{chap:mechanisms}
+
+\section{Introduction} \label{Introduction}
+
+Is it possible to reduce greenhouse gas (GHG) emissions and create jobs at the same time? The double challenge of global warming and unemployment has motivated a long quest for such a panacea. And it remains an acute topic as global warming is likely to exceed 2\degree C by the end of the century and unemployment persists at high post-crisis levels in many countries in Europe and abroad.
+
+The urgent need to take action and mitigate global warming is unanimously recognised by the international scientific community. To make substantial and sustained reductions of greenhouse gas emissions, we must transform the way we produce and use energy, through investment in renewable sources of energy, energy efficiency and new infrastructures. The USD 1.8 trillion invested in energy each year \citep{IEAWIR2016} need to be redirected towards renewable sources. The importance of such a shift was restated in the Paris Agreement: in its article two, it recalls the importance of "making finance flows consistent with a pathway towards low greenhouse gas emissions and climate-resilient development". 
+
+Such amounts have attracted attention with respect to their impacts on the hot-button issue of employment. In various policy communications and media, the potential for so-called “green jobs” is prompted as a central argument in favour of renewable energies or weatherproofing programs – sometimes even before their benefits for the climate. These investments would create jobs because they are more local and labour-intensive than burning fossil fuels in capital-intensive plants. But similar arguments on jobs were also used by Donald Trump to exit the Paris Agreement.\footnote{He insisted on the importance of coal jobs in the US. The word "job" was used 18 times in his speech.}
+
+Considering employment impacts as a simple side benefit to global warming mitigation would be a mistake. Today, this second dividend is a powerful lever to initiate public action. Although the Paris Agreement has increased the ambition of countries' emissions pledges, international negotiations still stumble on a situation of prisoner's dilemma: individually, each nation might try to free-ride as much as possible and let the other countries bear the bulk of the climate burden. This partly explains why the sum of INDC of the Paris Agreement is far from meeting its overall target of staying "well below 2\degree C"\footnote{According to the World Energy Outlook of the \citet{OECD/IEA2016}, the Paris Agreement pledges are "not nearly enough to limit warming to less than 2\degree C"}, while at the same time the IPCC chair, Dr Pachauri, considers that “the solutions are many and allow for continued economic and human development. All we need is the will to change”\footnote{Declaration at the release of the Fifth Assessment Synthesis Report of the IPCC, November 2, 2014}.
+As long as ecology and economy are conceived in terms of trade-offs, such difficulties are deemed to continue. The issue of employment is a local matter which can accelerate, as well as hinder the energy transition transformation. 
+
+But is it possible to generate net positive job creations by simply shifting demand towards environmental-friendly sectors? 
+The literature on this dual topic of environment and economy is known as the "double dividend" debate. It studies under what conditions protecting the environment (the first dividend) can be obtained in conjunction with an economic benefit (the second dividend).
+Results from this literature are still mixed, and it is difficult to find robust conclusions. Two main reasons explain this difficulty. The first one is the multiplicity of situations studied: analyses refer to different countries, with various scenarios and data hypotheses on technology costs or production structures. The second reason relates to the variety of the tools employed: different economic models are used. In particular, two main families of economic models coexist in the energy-employment literature: Input-Output (IO) models and computable general equilibrium (CGE) models. And it is difficult to disentangle which results stem from the model and which do not. Yet, these two types of models continue to be used in academic publication and in reports to policy makers - without comparing to one another.
+
+Our aim is thus to understand the economic mechanisms of job creation due to investment shifts. Why would divesting from fossil fuels and favouring sectors for a low-carbon future, such as renewable energies or building insulation, create jobs? Do the arguments of local jobs, domestic sources of energy and labour-intensive technologies hold in a general equilibrium?
+Our analysis should also enable us to determine robust results across the two types of models, IO and CGE, and to point out their differences. Do these two model types yield approximately similar, very different, of maybe even opposite results? Answering these questions is necessary to evaluate the validity of the literature on green jobs which employs IO models.
+
+Our work is related to the literature on green jobs, for which there are many quantitative estimates, using both CGE models \citep{Lehr2008, Lehr2012, Bohringer2013, Blazejczak2014, Creutzig2014, Duscha2014, Duscha2016, Chen2016} and IO models \citep{Hillebrand2006, Scott2008, deArce2012, Markaki2013, Hartwig2016, Yushchenko2016, Li2016, Garrett2017}.
+We also use the methodology that \citet{Garrett2017} recently formalised and coined as the "synthetic industry approach" to estimate investment requirements for low-carbon sectors. This new approach helps circumvent the issue of data availability with respect to renewable energies, which was highlighted by \citet{Cameron2015}.
+Finally, we also connect to the small strand of literature comparing IO and CGE models, although these works were published outside of the energy field. These papers studied the employment impacts of an increase in investment, and pointed out that IO models yield higher figures than their CGE counterparts \citep{Partridge1998, OHara2013, Dwyer2005}.
+
+However, the originality of our paper is twofold. 
+First, we go beyond a simple quantification, and disentangle the mechanisms of job creation at play when shifting investment. 
+Our analysis starts with the simpler IO model. We show that, within this framework, the potential for job creation depends upon three parameters: the share of labour in value added, the level of sectoral wages and the rates of imports. Shifting investment generate jobs if the shift targets sectors with a higher share of labour in value added, with lower wages or with a lower rate of imports. After a general discussion on these three levers, we test them one by one, using several CGE stylised models - each one of them designed to test a specific assumption.
+Breaking down job creation to three levers, and studying each of these levers has not been done yet to our knowledge, neither for a CGE nor an IO model, and even less with the two models.
+Second, we provide quantitative employment estimates of investing in solar PV and weatherproofing, using both an IO model and a full-fledged CGE. Our two models are based on the exact same data, at a disaggregated level (57 sectors), with the most recent values available for national accounts (2013). To our knowledge, such a comparison exercise has not been undertaken yet in the energy field. And our results might differ from the few papers doing the same kind of quantitative comparison in other fields, as the local and labour-intensive characteristics of renewable energies are often prompted as key to their positive employment potential.
+
+Our analysis indicates that it is possible to generate employment in a CGE by shifting demand towards sectors with a high labour share or low wages. On the contrary, we see no positive impact of targeting sectors with low import rates in a CGE, conversely to many political messages.
+IO models provide a good approximation of the impacts of sectoral wage differences on employment. They also provide the right direction for the labour-intensity effect, although overestimating it. But they diverge significantly as to the impacts of trade: IO models assume a strong positive impact of targeting sectors with lower import rates, on the contrary of CGE models.
+Although the literature estimates that employment impacts will always be stronger in IO than in CGE due to the absence of feedbacks in the former, we show that the price of capital can lead to weaker effects in IO. Considering the source of employment effect is thus determining the employment impacts and divergences between the two models.
+On a more quantitative field, investing in solar panels or weatherproofing generates employment in both models. The results are quite similar across models for solar. They are higher with IO for weatherproofing, but by a factor from 1.19 to 1.87, a discrepancy much lower than other estimates in the literature. 
+
+The remainder of this paper is organised as follows.
+We start with a review of literature in section \ref{sec:literature}. In section \ref{sec:intuition}, we will consider a simple IO model, in order to highlight that three mechanisms determine the job impact of policy in IO analysis: the share of labour in value added, the wages and the rates of imports. We comment the economic intuitions behind these three potential levers for job creation.
+Then, in section  \ref{sec:smallModels}, we discuss the impact of each of these three mechanisms with stylised CGE models.
+We move on with more quantitative estimates in section \ref{sec:fullModel}, using a full-fledged CGE with 58 sectors and comparing it with IO results.
+Finally, section \ref{sec:conclusion4} concludes and discusses implications for policy and future research.
+
+
+%%%%%%
+
+\section{Literature} \label{sec:literature}
+
+Economists have favoured the use of taxes to correct externalities since the work of \citet{Pigou1920}.
+But the search for a double dividend has started with the idea of a carbon tax to mitigate climate change. \citet{Pearce1991} coined the term double dividend.
+The initial idea was to tax the negative externalities, the carbon emissions, and use the revenues to reduce more distortionary taxes, thus improving the overall economic performance and reducing pollution at the same time. If the positive impacts ("the revenue-recycling effect) could overweight the negative impacts ("the tax-interaction effects"), then a "strong" double dividend could be obtained, in the sense of \citet{Goulder1994}.
+The appeal of such a no-regret policy has motivated a number of theoretical and empirical researches. 
+In a seminal paper, \citet{Bovenberg1994a} argued that, in a first-best setting, environmental taxes exacerbate distortions on the labour market and on the commodity market, leading to a decrease in employment.
+Two years later, \citet{Bovenberg1996} studied the case with unemployment through a fixed wage, and with a fixed factor. They concluded that a tax on pollution can boost employment if labour is a better substitute to the polluting input than capital. 
+An early review of the numerous works on the double dividend was made by \citet{Goulder1994}. \citet{Chiroleu-Assouline2001} provides a sum-up of theoretical work, and \citet{Patuelli2005} offer a more recent review of 61 quantitative studies on this topic.
+
+This literature has evolved with the increasing concerns of global warming and rising unemployment. The employment dividend has become more pregnant. An abundant stream of research has studied whether the energy transition can kill two birds with one stone, through the potential for so-called "green jobs".
+Another shift was the increased perception of the inter-sectoral impacts.
+In the earlier works, the analytical papers \citep{Bovenberg1994, Bovenberg1996} tried to find in what conditions a better use of green taxes could reduce unemployment, but they considered an economy with one single sector.
+However, the need to invest in new, low-carbon infrastructures has motivated a research based on the impacts of investment between different sectors. For example, would it be better to invest in building retrofit or in additional heat sources? in domestically-produced wind turbines, or in cheaper gas-fuelled power gas plants with imported gas? 
+Models with several sectors became dominant to study the differences of cost structures and import rates.
+
+In this literature on energy transition and employment, it is possible to distinguish two broad categories of models that have been employed to quantify employment impacts: input-output (IO) models and computable general equilibrium (CGE) models.
+For input-output models, some of the works include \citet{Hillebrand2006, Scott2008, deArce2012, Markaki2013, Hartwig2016, Yushchenko2016, Li2016, Garrett2017}.
+For CGE models, some of the most prominent works are \citet{Lehr2008, Lehr2012, Bohringer2013, Blazejczak2014, Creutzig2014, Duscha2014, Duscha2016}.
+
+IO models can be considered as a corner-case of a CGE, i.e. a CGE with very specific assumptions. But these assumptions are so specific that IO and CGE can also be considered as different model types. The most well-known assumptions of IO are the ones of Leontief production functions and fixed prices \citep{Miller2009}. \citet{Dwyer2005} list five assumptions underpinning IO models: final demand is exogenous; capital, labour and land are endogenous, there are no price-induced substitution effects, government expenditure remains constant, and employment is perfectly elastic. 
+Another assumption depends on the category of IO model considered. It is important to distinguish two types of IO models: open (or type I) models and closed (or type II) models \citep{Miller2009}. The differences between these two types lies in the treatment of wage and household consumption. These are endogenized in type II models: additional labour revenues lead to increased consumption, in a circular way. In this paper, we will focus on open models, as they seem more common in the literature. Thus, we will implicitly refer to open models in the remaining of this paper. In this framework, household consumption is exogenous. It is not influenced by labour revenues. 
+With all these assumptions, IO models can also be considered as a significant departure from CGE models: by fixing prices, it deviates from the profit-maximising behaviour of the firm in CGEs. By setting exogenous demand, it departs from the utility-maximising consumer in CGE models. A possible pitfall of using exogenous investment and fixed prices is the possibility to increase investment in order to generate employment, without considering how this increase is financed and the negative impacts on employment at payback time. For example, \citet{Wei2010} estimates the number of jobs per unit of energy produced, thus creating a bias favouring the costlier sources of energy.
+
+Despite these restricted assumptions, the use of IO models is motivated by a number of comparative advantages over CGEs. The first one is their simplicity: IO models are easy and quick to set up. They are easier to combine with technical bottom-up models, for example in the building sector \citep{Scott2008, Yushchenko2016}. Because they are easier to understand, they also avoid the pitfall of a "black box" sometimes attached to large computational models \citep{Faehn2015}.
+
+%Finally, their simplifying assumptions can be considered a sufficient approximation considering the lack of accurate data. Indeed, there is often no data directly available on the cost structure of renewable energies. \citet{Cameron2015} showed the significant uncertainty in quoted figures, and the lack of first-hand figures, resulting in recursive referencing in the literature.
+%To overcome this lack of data,the use of industry surveys has seldom been employed \citep{Lehr2008, Lehr2012}. But more commonly, researchers have resorted to chain-value approaches. They use data on cost structure and allocate these costs to the corresponding sectors in national accounts. This approach has recently been formalised by \citet{Garrett2017}, in a methodology he coined the "synthetic industry approach". This is the framework we will consider in the paper to estimate the investment required in the solar and building sectors.
+
+All these assumptions of IO models raise the crucial questions of the validity of their results. Are IO analyses a good approximation of general equilibrium studies? And if not, what assumptions should be changed?
+
+As an employment analysis of the energy transition, our work extends the previous analyses which used only one methodology. In particular, we use the same renewable investment vectors as \citet{Garrett2017}, but add the results from a CGE modelling, as well as an explanation of the input-output mechanisms of job creation.
+
+As a comparison exercise, we contribute to a small literature on difference between IO and CGE. 
+Other papers that have already mention the difference of employment impacts between IO and CGE models are \citet{Partridge1998, OHara2013}. 
+\citet{Dwyer2005} offer a discussion and quantitative comparison, at the regional and national level, of the impacts of a special event, an Australian Grand Prix, between an IO and a CGE model. They find that the employment multiplier is 4.64 higher in the IO model. They point out that there is an eviction effect in CGE and not in IO, which explains to a large extent these discrepancies. Other quantitative analyses have studied local or regional impacts \citep{Siegfried2000}, but this is not our focus here. 
+
+Our paper is close to these comparison works, and in particular to the analysis of \citet{Dwyer2005}, but differs in several points. 
+The main one is that we go deeper in the discussion of differences between IO and CGE models. 
+We first break down the mechanisms of job creation through shift of final demand in IO models, and show that they boil down to three components: the relative shares of labour in value added, wages, and import rates of the sectors affected by the shift. 
+Then, we compare each of these mechanisms with a stylised CGE model. 
+In this comparison exercise, we show side by side the corresponding equations of IO and CGE models, and discuss each of them. Finally, we make a quantitative comparison with a full-fledged CGE, and add a discussion on labour market representation, as well as on trade closure.
+
+The topic under scrutiny is also different. Our focus is the energy transition, not a special event such as a Grand Prix or a stadium investment. We use data of investment in low-carbon sectors. This different data might yield new results, as the high labour content of renewable energies or building insulation is often presented as a lever for job creation. And it provides comparison between CGE and IO models, which are both used in the literature on the employment effects of an energy transition.
+
+Finally, from a methodological point of view, we do not study an increase in investment, but a shift, a reallocation of the same amount of aggregate investment towards different sectors. This approach should alleviate the lack of eviction effect in IO models, and might provide different results. In addition, this question is of interest for policy makers, as it tries to determine whether job creation is possible with a constrained budget.
+
+%%%%%%
+
+\section{Intuitions and assumptions of IO models} \label{sec:intuition}
+
+\subsection{Presentation of input-output models}
+Let us first consider IO analyses. What drives employment creation in these models? What are the mechanisms at play?
+In input-output, the link between the vector of final demand $\pmb{d}$ and the vector of production $\pmb{p}$ is made by the balance between supply and use at the domestic level \eqref{domestic_balance}, and for imports \eqref{imports_balance}:
+
+\begin{equation}
+\pmb{p^d} = \pmb{Z^d} \cdot \pmb{i} + \pmb{d^d}	
+\label{domestic_balance}
+\end{equation}
+\begin{equation}
+\pmb{m} = \pmb{Z^m} \cdot \pmb{i} + \pmb{d^m}	
+\label{imports_balance}
+\end{equation}
+We use here the same writing convention as in chapter \ref{chap:TE_Emploi}. 
+The exponent \textit{\textbf{d}} refers to a domestic item and the exponent \textit{\textbf{m}} to an imported item. 
+$\pmb{p^d}$ is domestic production, $\pmb{Z^d}$ et $\pmb{Z^m}$ are the matrices of intermediate consumption, $\pmb{d^d}$ and $\pmb{d^m}$ are the vectors of final demand, and $\pmb{m}$ is the vector of imports. 
+$\pmb{i}$ is a vector made of 1. 
+Bold and small letters represent a column vector, bold and capital letters a squared matrix. Finally, the exponent \textit{\textbf{t}} represent the sum of imported and domestic items (not to be confused with the transposition operator \textit{t}, not in bold). Thus, total final demand is equal to $\pmb{d^t=d^d+d^m}$, and total intermediate consumption is $\pmb{Z^t=Z^d+Z^m}$.
+
+Equation \ref{domestic_balance} provides a link between domestic demand and output, through a matrix inversion from \ref{domestic_balance}:
+
+\begin{align*}
+	\pmb{p^d} &= (\pmb{I} - \pmb{A^d})^{-1} \cdot \pmb{d^d}	
+\end{align*}
+where $\pmb{I}$ is the identity matrix and $\pmb{A}= (a_{ij})$ is the matrix of technical coefficients defined by $\pmb{Z} = \pmb{A} \cdot \pmb{p}$.
+
+We define the rate of imports in final demand as $\pmb{\tau^m} = 1- \frac{\pmb{d^d}}{\pmb{d^t}}$, and we introduce the hat operator: $\widehat{  }$, which transform a vector $\pmb{x}$ into a diagonal squared matrix $\pmb{\hat{x}}$, so that:
+\begin{align*}
+	\widehat{x_{ii}} &=x_i \\
+	\widehat{x_{ij}} &=0 \quad \forall i \ne j
+\end{align*}
+
+then we can further link total final demand to output:
+\begin{align*}	
+	\pmb{p^d} &= (\pmb{I} - \pmb{A^d})^{-1} \cdot (\pmb{I} - \pmb{\widehat{\tau^m}}) \cdot \pmb{d^t}	
+\end{align*}
+
+Finally, employment is linked to production in a linear way, by multiplying production by its average number of jobs. We define the column vector $\pmb{\tilde{e}} = \pmb{fte}/\pmb{p}$, where $\pmb{fte}$ is the vector providing the number of direct full-time equivalent jobs in each sector, at the year of calibration (the reason for the tilde on $\pmb{\tilde{e}}$ will become clear later). 
+Then, as we are interested in changes in final demand, we introduce the change operator $\Delta$. 
+The relation between variations of final demand and variations of the total number of jobs $FTE$ is:
+
+\begin{align}	
+	\Delta FTE &=  \pmb{\tilde{e}}^t \cdot (\pmb{I} - \pmb{A^d})^{-1} \cdot (\pmb{I} - \pmb{\widehat{\tau^m}})\cdot \Delta \pmb{d^t}
+	\label{eq:starting_equation}
+\end{align}
+where $\pmb{\tilde{e}}^t$ is the transpose of the vector $\tilde{e}$. Equation \ref{eq:starting_equation} is the fundamental relation of IO analysis to study employment effects. 
+
+But let us add a small twist in order to make this expression more intuitive. 
+Since the entire system of equations is linear, we can link final demand not only to production, but also to value added.
+Value added $\pmb{va}$ is equal to the difference between production $\pmb{p}$ and intermediate consumptions $\pmb{Z}$. 
+In an index format:
+$$va_j = p_j - \sum_i Z_{i,j} =  (1 - \sum_i a_{i,j}) \cdot p_j$$
+which translates into a matrix format to:
+$$\pmb{va} = (\pmb{I} - \widehat{\pmb{i^t A^d}}) \cdot \pmb{p}$$
+
+By definition, we have the equality: 
+$\pmb{\tilde{e}}^t$ = $\pmb{e}^t \cdot (\pmb{I} - \widehat{\pmb{i^t A^d}}) $, where $\pmb{e}$ is the number of jobs per unit of value added, which we label direct employment intensity, or job intensity. The former equation \eqref{eq:starting_equation} can then be written as:
+\begin{align}	
+	\Delta FTE &=  \pmb{e}^t \cdot \pmb{Q^d} \cdot (\pmb{I} - \widehat{\pmb{\tau^m}}) \cdot \Delta \pmb{d^t}
+	\label{eq:starting_equation2}
+\end{align}
+where  $\pmb{Q^d} = (\pmb{I} - \widehat{\pmb{i^t A^d}}) \cdot (\pmb{I} - \pmb{A^d})^{-1}$. The matrix $\pmb{Q^d}$ is an allocation matrix. It indicates in which sector the value added to respond to final demand is generated. Remember here that domestic demand is equal to domestic value added, so $\pmb{Q^d}$ just allocates final demand, it does not increase value added. This allocation purpose is illustrated by the fact that the sum of each column of $\pmb{Q^d}$ is equal to one.
+
+This new form illustrates the functioning of input-output models. Reading equation \ref{eq:starting_equation2} from the right to the left, it shows that a change in final demand leads to a change in domestic demand (net of imports). This domestic demand is allocated to various sectors by the $\pmb{Q^d}$ matrix, and generates value added. Finally, this value added creates jobs, depending on the job intensity $\pmb{e}$ of each sector. 
+
+\subsection{A simple two-sector economy}
+With such a framework, is it possible to create jobs by shifting demand? 
+To get a clearer view, we start with a simple example. Let us assume that there are only two goods: 1 and 2, and two production factors: capital and labour. 
+A general formulation of the domestic IO balance is given in table \ref{tab:2x2_IO_table}.
+
+\begin{table}
+	\centering
+	\caption{Domestic IO table for a two-sectors economy}
+	\label{tab:2x2_IO_table}
+	\begin{tabular}{llllll}
+		\toprule
+		&  & Activity &  & Domestic Demand & Total \\
+		\midrule
+		&  & Industries & Services &  &  \\
+		Activity & Industries & $Z_{11}$ & $Z_{12}$ & $D_1$ & $P_1$ \\
+		& Services & $Z_{21}$ & $Z_{22}$ & $D_2$ & $P_2$ \\
+		Value added & Capital income & $K_1$ & $K_2$ &  &  \\
+		& Labour income & $L_1$ & $L_2$ &  &  \\
+		Total &  & $P_1$ & $P_2$ &  &  \\
+		\bottomrule 
+	\end{tabular}
+\end{table}
+
+In this case, we have the following general formulation for each vector:
+$$ \pmb{e} =
+\begin{pmatrix} 
+e_1 \\
+e_2
+\end{pmatrix}
+$$
+
+$$ \pmb{Q} =
+\begin{pmatrix} 
+1-\theta_1 & \theta_2\\
+\theta_1 & 1-\theta_2
+\end{pmatrix}
+$$
+
+$$ \pmb{I} - \pmb{\widehat{\tau^m}} =
+\begin{pmatrix} 
+1-\tau^m_1 & 0\\
+0 & 1-\tau^m_2
+\end{pmatrix}
+$$
+The demonstration and full expression of $\theta_1$ and $\theta_2$ are in appendix \ref{app:input_ouput}. 
+
+With such a framework, we can apply equation \ref{eq:starting_equation2} to show that a shift in final demand from sector S1 towards sector S2 generates jobs if and only if:
+\begin{equation}
+\label{eq:result1}
+(1-\tau^m_2) \cdot \left[(1-\theta_2)e_2 + \theta_2 e_1 \right]> (1-\tau^m_1) \cdot \left[ (1-\theta_1)e_1 + \theta_1 e_2 \right]
+\end{equation}
+The terms between the brackets represent the domestic employment content  $ce^d$, defined as the number of jobs per unit of domestic demand, by 
+$$\forall i, \quad ce^d_i = \sum_i e_i \cdot Q^d_{ij}$$
+where the $Q^d_{ij}$ act as an allocation key, since $\sum_i Q^d_{ij}= 1$.
+The domestic employment content of a sector is high if addressing demand to this sector generates value added in sectors with a high number of jobs per unit of value added.
+
+Equation \ref{eq:result1} reveals that, in input-output analysis, a shift in final demand can create jobs if:
+\begin{itemize}
+	\item the shift targets sectors with lower import rates $\tau^m_i$
+	\item the resulting domestic demand generates value added in sectors with a higher number of jobs per unit of value added $ce^d_i$. 
+\end{itemize}	
+
+To make our case clearer, let us consider the simpler case where there is no intermediate consumption. The allocation matrix $\pmb{Q^d}$ becomes the identity matrix, which means all the non-diagonal terms $\theta_i$ become null. And equation \ref{eq:result1} becomes:
+\begin{equation}
+(1-\tau^m_2) \cdot e_2 > (1-\tau^m_1) \cdot e_1
+\label{eq:result1_simplified}
+\end{equation}
+This last equation indicates clearly that job creation through reallocation of final demand is possible, and depends on two conditions: the import rate $\tau$ and the employment intensity $e$. 
+
+These two levers of action are at the heart of input-output results. And indeed, they rest on what seems to be strong economic intuitions. 
+The first intuition is that allocating demand to sectors with lower import rates would result in "in-shoring" jobs by favouring the domestic production system. If imports are seen as losses or leaks of value added, generating jobs in foreign countries, then favouring local sectors helps reduce this leak and increases employment in the country.
+The second intuition is to target sectors with high employment content, so as to increase demand for labour. This intuition overlaps with the ideas of labour-capital substitution and job sharing. For example, if one sector is more capital-intensive and another one is more labour-intensive, reallocating demand from the first to the second sector would substitute labour to capital. And if wages are very high in one sector, then concentrating demand on sectors with lower wages could create more jobs with the same amount of value added.
+
+\subsection{Discussing the two intuitions of IO models}
+
+However, the two intuitions that reducing import and encouraging employment-intensive sectors can create jobs are more ambiguous than what they seem at first sight.
+
+\subsubsection{High job intensity or low labour productivity?}
+
+Let us consider first the intuition that favouring labour-intensive sectors would increase employment.
+One can note that labour-intensity $e$ is the inverse of labour productivity $\rho$. 
+So encouraging sectors with high labour intensity is strictly equivalent to favouring sectors with low productivity. 
+Put this way, the conclusion is much less appealing. As Paul \citet{Krugman1997} wrote: “Productivity isn't everything, but in the long run it is almost everything.”. The key idea is that productivity is what defines the real wage in the long term. 
+Put this way, favouring low productivity sectors is rather counter-intuitive and can be seen, literally, as counter-productive.
+
+It is possible to further disaggregate the labour-intensity term $e$ in equation \ref{eq:result1_simplified}, in order to better reflect the mechanisms in input-output models. 
+This labour intensity is, in our definition, a ratio equal to the number of jobs (in full-time equivalent, or FTE) per unit of value added: $e_i = FTE_i/VA_i$. 
+But this direct link between value added and employment hides one important step. In input-output table, value added in each sector is divided between labour compensation and gross operating surplus. Only the labour compensation then leads to direct employment in that sector.
+This means that the job intensity in input-output analysis actually depends on two parameters: the share of labour in value added, and the number of jobs per unit of labour compensation. Or, to put it more clearly, the job intensity is the ratio of two values: the share of labour in value added $\tau^L$ and the average wage $w$ in each sector.
+Mathematically, we show this by introducing labour compensation $L_i$ in our definition of labour intensity, to make these two new ratios appear:
+\begin{equation}
+e = \frac{FTE_i}{VA_i} = \frac{FTE_i}{L_i} \cdot \frac{L_i}{VA_i} = \frac{\tau^L_i}{w_i}
+\label{eq:job_intensity_decomp}
+\end{equation}
+
+This formulation provides a direct interpretation: job-intensive sectors are the ones with a high share of labour in value added and a low wage.
+Targeting sectors with a high share of labour might increase employment demand, at least in the short term. 
+And encouraging sectors with lower wages seems like a way to share employment: more people get a job out of the same amount of labour remuneration.
+
+\subsubsection{Reduce imports: an all-win?}
+
+The second intuition of IO analysis is that reducing imports would relocate jobs inside the domestic production system. 
+This is a mercantilist assumption, a dual view of trade in which exports are good (they increase final demand and thus create jobs) while imports is a leak of value added which generates jobs in foreign countries.
+However, such a binary view suffers from two shortcomings. 
+
+First, the view that imports are a loss is a strong assumption with regards to trade theory. "If there were an Economist's Creed, it would surely contain the affirmations 'I understand the Principle of Comparative Advantage' and 'I advocate free trade'. For one hundred seventy years, the appreciation that international trade benefits a country whether it is fair or not has been one of the touchstones of professionalism in economics" wrote \citet{Krugman1987}.
+The question whether free trade is the best option has been an ongoing debate for more than thirty years \citep{Krugman1987}. But the arguments against free trade are mostly based on increasing return, imperfect competition and distributional impacts, which are not explicitly modelled in input-output analysis. 
+Because of its modelling, IO analyses directly support the idea of a trade policy aiming at reducing imports, rather than a free-trade approach. However, the very crude representation of trade in IO raises a doubt as to the validity of a such a strong result.
+
+Second, input-output analyses based on reducing imports act as if the budget constraint of trade balance does not hold.
+The intuitive criticism is that trade balance has to get balanced \textit{eventually}. A country cannot run a trade deficit (or surplus) indefinitely, and a balancing feedback occurs, often through an evolution of the exchange rate: this is the external devaluation. 
+Trying to improve the trade balance will only generate short-term benefits, which will vanish as soon as the exchange rate adapts.
+
+However, it is important to specify what is the time horizon of this "eventually". 
+The continuous trade deficit of the United States is a counter-example of this budget rule. Other, and more common counter-examples include the regimes of fixed exchanges rates, or common currency.
+In particular, in the Eurozone, the trade deficit of one country hardly impacts the exchange rate of the euro, since most European nations trade with each other, and most countries represent a small part of total imports and exports. Inflation discrepancies can then lead to losses in competitiveness and external deficit in peripheral countries \citep{Coudert2013}. In a common currency, restoring trade balance can occur through internal devaluation, rather than external devaluation. But the internal option is much slower, taking years and even decades to adjust wages downwards. 
+Within this context of "unbearable slowness of internal devaluation" \citep{Krugman2012}, a hypothesis of fixed unbalanced trade might be a better mid-term approximation than a fixed budget constraint.
+
+Second, it is important to remind that it is possible to suppose that the trade balance constraint is met in input-output analysis. 
+Strictly speaking, the assumption of fixed coefficients only applies to the production function. 
+As to the evolution of imports and exports, other options  than keeping coefficients fixed are available \citep{Stoleru1969}[p.263]. 
+For example, one way to do it would be to assume that the exports are fixed, the total of imports is constant, and the share of imports in each sector is proportional to demand.
+But these alternative options are seldom used in practice, at best,  by the input-output community.
+
+
+\subsection{Three determinants}
+
+Combining equations \ref{eq:result1_simplified} and \ref{eq:job_intensity_decomp}, we get that a shift in demand from sector S1 towards sector S2 increase employment in an input-output model if and only if:
+\begin{equation}
+(1-\tau^m_2) \cdot \frac{\tau^L_2}{w_2} > (1-\tau^m_1) \cdot \frac{\tau^L_1}{w_1}
+\label{eq:result2_simplified}
+\end{equation}
+
+In equation \ref{eq:result2_simplified}, we have identified the three determinants of job creation in input-output models for a reallocation of final demand: the rate of imports, the share of labour vs capital in value added, and the wage. 
+
+Such a simple equation has been obtained by assuming that there was no inter-industrial exchange. In practice, an IO model with more than two sectors and with inter-industrial exchanges would yield a more complicated formulation because of the Leontief inverse matrix (which allocates to many sectors the final demand addressed to one sector).
+But fundamentally, the underlying logic remains the same. Imports, labour share and wages are the three key parameters.
+
+Such a simple conclusion was also made possible thanks to the simplifying assumptions of fixed coefficients and fixed prices input-output model.
+But to what extend would these intuitions and results hold with less constraining assumption, in a general equilibrium framework?
+Answering this question would provide a bridge between the two communities of CGE and IO modellers who study job creation linked to the energy transition.
+
+The remainder of this paper is organised as follow.
+In the next section, we study separately each of these three determinants, comparing IO and CGE approaches with three toy-models designed for each question. 
+Then, in the following section, we compare a full CGE model with 58 sectors to its equivalent IO model, to get quantitative results.
+
+
+%%%%
+
+\section{Three small scale models} \label{sec:smallModels}
+Is it possible to create jobs by simply shifting demand towards more job-intensive sectors? We saw in section \ref{sec:intuition} that the answer was positive with input-output modelling. 
+Job creation was made possible through three channels: a higher share of labour in value added, lower wages, and a lower share of imports. 
+
+But do these results stand in a general equilibrium? In this section, we investigate each of these three elements with simple models.
+
+\subsection{The share of labour in value added} \label{subsec:labourShare}
+We first test the intuition of input-output related to the labour-intensity in value added. Does encouraging sectors with high labour intensity create jobs? 
+To that end, we compare a CGE model with an input-output model.
+For the CGE, we consider a simple static model of a closed economy. 
+As an input-output model can be considered a special case of a CGE, we can put side by side the corresponding equations of each model. This is done in table \ref{tab:closedModel}. Table \ref{tab:closedModel} highlights that the differences between the two models are:
+\begin{itemize}
+	\item The production functions and corresponding factor demand functions (eq. 1 \& 2). The IO model uses a Leontief production function, which implies that there is no substitutability between capital and labour. CGE models use a more general constant elasticity of substitution (CES) function with positive levels of elasticity between labour and capital. After conducting a survey of climate-energy models, \citet{VanderWerf2008} noted that "many models use the knife-edge case of a unit elasticity", i.e. a Cobb-Douglas function. However, his empirical estimates led him to "reject	that elasticities are equal to ones", with values at the country level ranging from 0.22 to 0.61. These finding are in line with the literature on capital-labour production functions (see \citet{Antras2004} for a review). Therefore, we should consider and compare in our analysis both Cobb-Douglas functions, as they are widely used, and CES with a lower elasticity of substitution between capital and labour, since they are more empirically founded.
+	\item Endogenous vs exogenous household demand function (eq. 4). In the CGE, assuming Cobb-Douglas preferences, the consumption of each good, in volume, depends on the income net of savings, on household preferences and on the price of each good. By contrast, this consumption is entirely exogenous in an IO model. 
+	\item Labour supply (eq. 5). In an IO model, wages are fixed, so that there is an implicit assumption of infinitely elastic supply of labour. In a CGE model, it is possible to model other labour market mechanisms. In our analysis, we use the formulation of a wage curve, i.e. a relationship between the price of labour and the unemployment rate, as first evidenced by \citet{Blanchflower1995}. This "empirical law of economics" is now supported by a large number of studies based on microeconomic data \citep{Blanchflower2005}. With a wage curve, wages decrease as the unemployment rate increases. The intuition behind this mathematical formulation can be, for example, a bargaining-power effect: "higher local unemployment makes life tougher for workers [...] and therefore it is not necessary to remunerate those individuals so well" \citep{Blanchflower2005}. 
+	\item Capital supply (eq. 7). Capital is also supplied infinitely at a fixed price in IO, which means there is an infinitely elastic supply of capital. On the contrary, in many short-term CGE models, capital is exogenous and fixed in quantity.
+\end{itemize}
+
+In input-output, investment is determined exogenously. In order to draw a parallel between IO and CGE, we also model investment in each sector as exogenous in our CGE, in volumes (eq. 8). Savings are then set to be equal to total investment (eq. 9). 
+This macro closure driven by investment implies that savings will be exogenous in volumes as well. But the rate of savings might vary. 
+In its discussion of macro closures, \citet[p. 57]{Sen1963} classified such models with investment-driven closure and unemployment as "general theory models".
+Fixing investment exogenously allows to easily represent sectoral reallocation of investments. And it is widely used in the literature \citep{Lehr2008,Lehr2012}.
+
+
+\begin{table}[!h]
+	\centering
+	\caption{Comparative equations of IO and CGE models.}
+	\label{tab:closedModel}
+	\begin{tabular}{llll}
+		\toprule
+		Num & Description & Standard CGE 1 & IO model \\
+		\midrule
+		eq1 & Production function& $Z_j=scZ_j \cdot (\sum_h \delta_{h,j} \cdot F_{h,j} ^{\rho^z})^{1/\rho^z}$ &  $Z_j = \min_h(\frac{F_{h,j})}{a_{h,j}})$\\
+		eq2 & Factor demand (capital and labour) & $F_{h,j} = ( scZ_j^{\rho^z} \cdot \delta_{h,j} \cdot p^z_j / p^f_h )^{\sigma^z} \cdot Z_j$ & $F_{h,j} = a_{h,j} \cdot Z_j$ \\
+		eq3 & Household income & $Inc = \sum_h p^f_h \cdot FF_h$ &  \\
+		eq4 & Household demand 	& $C_i = \frac{\alpha_i}{p^c_i} \left(Inc  - S^p\right)$ & $C_i = \overline{C_i}$ \\
+		eq5 & Unemployment & $ U =  1 - FF_{LAB}/Pop$ & $p^f_{Lab} = 1$ \\
+		eq6 & Labor supply & $log(\frac{p^f_{LAB}}{pc}) = - \gamma \cdot log(\frac{U}{U^0})$ & $p^f_{Lab} = 1$ \\
+		eq7 & Capital supply & $FF_{CAP} = \overline{FF_{CAP}} $ & $p^f_{Cap} = 1$ \\
+		eq8 & Investment & $I_i=\overline{I_i} $ &  $idem$ \\
+		eq9 & Savings & $S^p = \sum_i p^c_i \cdot I_i $ & $idem$ \\
+		eq10 & Balance of domestic good & $Z_i = C_i+ I_i$ &  $idem$ \\
+		eq11& Balance of factors & $FF_h = \sum_j F_{h,j}$ &  $idem$ \\
+		eq12 & Price equality & $p^c_i = p^z_i$ &  $idem$ \\ 
+		eq13 & Consumption price index & $p^c=\prod_i \left( p^c_i \right) ^{\alpha_i}$ & $idem$ \\
+		\bottomrule
+	\end{tabular}
+	\caption*{$idem$ indicates that the equation in this row is identical for the two models.
+		More information on this model can be found in appendix, section \ref{app:closed_economy}.
+		
+		When the capital-labour elasticity tends to zero and one, we get the limiting cases of the Leontief and Cobb-Douglas function. In such cases, to avoid issues with zeros, we replace the production function with a zero profit condition for the Leontief case, $p^z_j  = \sum_h p^f_h \cdot a^z_{h,j}$, and for the Cobb-Douglas with the function: $Z_j = b_j \cdot \prod_h F_{h,j}^{\beta_{h,j}}$.
+		
+		The respective factor demand functions are $F_{h,j}  = a^z_{h,j} \cdot Z_j$ and $F_{h,j}  = \beta_{h,j} \cdot p^z_j \cdot Z_j / p^f_h$.}
+\end{table}
+
+Given these differences between CGE and IO, how far are the results from input-output and from our CGE with standard parameter values? 
+We apply our model to a simple two-sector, two-good economy, represented by the social accounting matrix (SAM) given in table \ref{tab:SAM_2x2}. 
+In this case, we do not consider inter-industry transactions. This helps identify clearly which sector is more job-intensive (normalizing one unit of labour to one job). In this case, it is sector S1, with 9/14=0.64 jobs per unit of value added, against 4/9=0.44 jobs per unit of value added for S2. And studying a case without inter-industry transactions is not a loss of generality, as this matrix of inter-industry transactions is only a reallocation matrix of final demand and value added (cf. section \ref{sec:intuition}).
+
+\begin{table}
+	\centering
+	\caption{SAM of a two-good, two-sector economy}
+	\label{tab:SAM_2x2}
+	\begin{tabular}{llllllll}
+		\toprule
+		& S1 & S2 & LAB & CAP & HOH & INV & Total \\
+		\midrule
+		S1 &  &  &  &  & 9 & 5 & 14 \\
+		S2 &  &  &  &  & 4 & 5 & 9 \\
+		LAB & 9 & 4 &  &  &  &  & 13 \\
+		CAP & 5 & 5 &  &  &  &  & 1 \\
+		HOH &  &  & 13 & 10 &  &  & 23 \\
+		INV &  &  &  &  & 10 &  & 10 \\
+		Total & 14 & 9 & 13 & 10 & 23 & 10 &  \\
+		\bottomrule
+	\end{tabular}
+	\caption*{LAB: labour compensations; CAP: capital compensations; HOH: households; INV: investment}
+\end{table}
+
+Starting from the SAM in table \ref{tab:SAM_2x2}, we compare the impacts shifting of one unit of investment, in volume, from sector S2 towards the more job-intensive sector S1 (using equation 6 in table \ref{tab:SAM_2x2}). 
+In a standard IO model, this shift entails an increase in employment of 0.1984.
+
+Our CGE model allows to easily compare the impact of the capital-labour elasticity in the production function, and of the wage curve elasticity.
+For the value of elasticity between capital and labour, we consider three cases of a CES production function: a Leontief function, as used in IO models, which implies that capital and labour are perfect complements; a Cobb-Douglas, which is the function used by a majority of climate-energy CGE \citep{VanderWerf2008} and means an elasticity of one; and a CES function with an elasticity of 0.5 as an intermediate value, more in line with empirical estimates \citep{VanderWerf2008, Antras2004}.
+For the wage curve, we use a formulation of labour supply as in \citet{Blanchflower2005} (cf. equation 4 in table \ref{tab:closedModel}), and use their value of 0.1 as our central case. But we consider also two other values: $\gamma=0$, to represent fixed wages as in IO models, and $\gamma=0.05$ as an intermediate case.
+The employment results of a demand shift in a CGE for all these parameter sets are shown in table \ref{tab:employ_change_closed}. These results highlight the role and importance of labour supply (eq. 4 in table \ref{tab:closedModel}) and the form of the production function. 
+
+We comment this table \ref{tab:employ_change_closed} with five remarks.
+
+First, all the values in the table are positive. This shows that switching final demand towards more job-intensive sectors is a way to generate a positive impact on employment, both in IO and CGE models. The intuition of increasing labour demand by targeting job-intensive sectors holds in a general equilibrium framework. The lower productivity and the wage increase do not cancel out this positive effect.
+
+Second, the impacts on employment are negatively correlated with both the elasticity of substitution between capital and labour, and the elasticity of the wage curve. 
+These two results confirm the following intuitions.
+If the capital-labour  elasticity of substitution is high, targeting job-intensive sectors will increase demand for labour and its price, but also induce a substitution away from labour and towards. This feedback will lower the increase in labour demand. 
+And if the elasticity of the wage curve is high, then the increase in labour demand due to the demand shift will increase wages, which will reduce in turn the demand of labour from firms.  
+
+Third, in the case of fixed real wages (case $\gamma=0$), the impact on employment is identical for the three production functions. And that impact is the highest of all the cases we have considered (0.47). So if one estimates that real wages are constant (for example, in the short term), then the production function has no importance for the labour-intensity impact.
+
+Last but not least, if we compare the results of the CGE with IO, we see that the results of IO are roughly in line with the central case of our CGE analysis. They correspond to a capital-labour elasticity of 0.5 and a wage elasticity between 0.5 and 1. 
+Thus, it seems that IO might provide a reasonable approximation to CGE results for the "employment intensity" effect.
+
+\begin{table} [!h]
+	\centering
+	\caption{Impact of the production function on employment impacts, for a shift of one unit of final demand from sector S2 to sector S1}
+	\label{tab:employ_change_closed}
+	\begin{tabular}{c|ccc}
+		\toprule
+		Wage curve & \multicolumn{3}{c}{Capital-labour elasticity} \\
+		elasticity & Leontief & CES & Cobb-Douglas \\
+		($\gamma$)  &($\sigma_{KL}=0$) & ($\sigma_{KL}=0.5$) & ($\sigma_{KL}=1$) \\
+		\midrule
+		0 			  & 0.47445 & 0.47445 & 0.47445 \\ 
+		0.05		& 0.45392 & 0.24181 & 0.17001 \\
+		0.1 	 	 & 0.43505 & 0.16736 & 0.10676 \\
+		\bottomrule
+	\end{tabular}
+	\caption*{These results can be compared to the positive impact in a standard IO model: 0,1984 for the same shift in final demand.}
+\end{table}
+
+In all these variants, we have considered that the fixed factor, capital in our case, was fixed in quantity.
+Let us now add a word on the importance of this assumption. The extreme opposite would be to posit that the price of capital is fixed, and thus that capital supply is potentially infinite (this is similar to setting $\gamma=0$ with labour).
+However, in that case of fixed capital price, a shift of final demand does not create jobs in any of the configuration we have studied.
+This result reveals that the decrease in capital prices is an essential component of job gains in a CGE.	
+This can help explain why the CGE provides higher estimate of job creation than the IO model when the elasticities of the wage curve and labour-capital substitution are low. The CGE then combine a strong increase in labour demand with a decrease in capital prices, while capital price is fixed in a IO model. 
+Thus, the purchasing power increases more in a CGE than in IO, triggering a positive feedback on labour supply.
+
+In conclusion of this section, both a CGE and input-output analysis conclude to job creation when there is a shift in investment towards more job-intensive sectors. The amount of jobs created is similar between the two models. 
+However, this convergence hides two diverging mechanisms. 
+On the one hand, the production function of a CGE allows substitution between capital and labour, contrary to an IO model. Thus, the increased demand of good translates into a relatively lower increase in labour demand in a CGE. 
+On the other hand, there is a decrease in capital price in a CGE, which increases the real wage and thus the supply of labour. Conversely, capital price is fixed in IO.
+These results extend to several sectors the findings of \citet{Bovenberg1994, Bovenberg1996}, and are in line with the findings of \citet{Quirion2007}.
+
+
+\subsection{Sectoral wage differences} \label{subsec:wageDifference}
+We now investigate the question of sectoral wage differences.
+We expand the model of the previous section in order to account for wage differences between sectors. In the previous section, our CGE formulation assumed a unique wage across all sectors, while in this section we consider a specific wage for each sector. Such an assumption of heterogeneous wages is in line with the data observed in national accounts. 
+
+One explanation for the wage difference is the variety of labour skills required in each sector. Some sectors might require more skills, and this higher productivity leads to higher wages in a neoclassical framework. We explore this assumption in section \ref{subsubsec:labourSkills}.
+
+But other reasons might explain these sectoral wage difference. There could be an imperfect mobility of labour between sectors. For example, \citet{Duhautois2005} showed that most labour mobility occurs within the same sector in France. An extreme case is to assume there is no mobility, and a fixed pool of workers in each sector. This could be the case in the short-term, because of inertia in training, imperfect information, etc.
+Another reason, although linked to the imperfect mobility, comes from a more institutional view, in which wages are not only affected by productivity, but also by a balance of power in the bargaining between workers, unions and employers. \citet{Askenazy2016} defends this theory. He shows that two sectors can be identical (e.g. the underground in London and in Paris), but the worker in one sector get higher wages because workers are better organized. His work highlights that bargaining can be sector-specific, and disconnected to a certain extent from the Marshallian framework of supply and demand.
+We explore the assumption of wages variation for other reasons than skills in section \ref{subusbsec:fixedWages}, through the assumption of sectoral fixed wages.
+
+
+\subsubsection{Sectoral differences with labour skills} \label{subsubsec:labourSkills}
+In this section, we explore the impact of labour skills on wages and employment. We model two levels of qualification in the labour force: low skilled and high skilled. 
+They are modelled as imperfect substitutes, and form a labour composite which is then aggregated with capital.
+In each sector, these two qualifications are present, but their respective shares vary. 
+The supply of workers of each type is modelled with a wage curve.
+An overview of this model is given in appendix \ref{app:two_labour_model}.
+
+More specifically, we consider an economy with the SAM shown in table \ref{tab:SAM_twolabours}.
+Capital and labour remuneration are identical in the two sectors. 
+But we suppose here that there is a higher share of qualified workers in sector S2 than in S1. The number of workers of each type is given in table \ref{tab:labour_type}. 
+
+\begin{table}
+	\centering
+	\caption{A 2x2 economy with wage differences}
+	\label{tab:SAM_twolabours}
+	\begin{tabular}{lllllll}
+		\toprule
+		& S1 & S2 & LAB & CAP & HOH & INV \\
+		\midrule
+		S1 &  &  &  &  & 9 & 5 \\
+		S2 &  &  &  &  & 9 & 5 \\
+		LAB & 9 & 9 &  &  &  &  \\
+		CAP & 5 & 5 &  &  &  &  \\
+		HOH &  &  & 18 & 10 &  &  \\
+		INV &  &  &  &  & 10 &  \\
+		\bottomrule
+	\end{tabular}
+	\caption*{And the employment in sector S1 and S2, in volume, are 9 and 4.5 respectively. The wage ratio between the two sectors is thus 2.}
+\end{table}
+
+Because of the higher share of skilled workers in S2, there is a higher wage in S2 and less jobs for the same amount of labour compensation.
+In our example, the average salary is twice as high in sector S2 as in sector S1. S2 is less job-intensive than S1, with 8 workers against 6 for the same amount of value added and labour compensation.
+
+\begin{table}
+	\centering
+	\caption{Initial number of workers by type}
+	\label{tab:labour_type}
+	\begin{tabular}{lllllll}
+		\toprule
+		& S1 & S2 \\
+		\midrule
+		Low-skilled & 7 & 3 \\
+		High-skilled & 1 & 3 \\
+		\bottomrule
+	\end{tabular}
+	\caption*{With an initial wage of 1 in sector S1 and 2 in sector S2.}
+\end{table}
+
+With this setting, reallocating final demand from sector S2 towards the lower-paying job-intensive sector S1 increase employment by 0.143.
+Surprisingly, this figure is not sensitive to the wage curve elasticity, nor to the degree of substitutability between the two types of labour. 
+
+With an IO model, the impact of shifting one unit of final demand from S2 to S1 yields a positive employment impact of 0.143. The share of each labour type remains constant, due to the Leontief production function. 
+
+The results are thus similar with our CGE and IO models. The impact of skilled-specific wages is robust across the two models.
+
+
+\subsubsection{Sector-specific labour with exogenous wages} \label{subusbsec:fixedWages}
+
+Here, we consider a formulation in which labour is sector specific. There is no mobility of labour between sectors, and only one kind of labour in each sector.
+To represent sectoral wage differences, we assume this time fixed, exogenous wages in each sector. This is in line with the fixed salaries in IO. This model is a simple representation and an extreme case of our second and third explanations on sectoral wage differences.
+We take again the example of a 2x2 economy, as shown by the SAM in table \ref{tab:SAM_twolabours}.
+The two sectors present the same amount of capital and labour remuneration. 
+However, we suppose that exogenous wages are twice as high in sector S2 as in sector S1 (we normalise these wages to 1 in sector S1 and 2 in sector S2).
+Thus, the job intensity in sector S1 is twice as high as in sector S2.
+We investigate the impact of this difference in sectoral wages. 
+
+In our CGE with constant wage, a shift in final demand leads to an increase in employment of 0.321. This holds true for every production function. In our simulation, prices and wages remain constant, so all production functions behave like the Leontief one. 
+
+In input-output, a shift in investment from S2 towards S1 yields a positive impact on employment, due to the lower wages in S1. 
+Other things being equal, the value added from final demand generates the same amount of labour compensation. These compensations lead to more jobs (but jobs with lower wages).
+In our example, a shift of unit of investment from S2 to S1 leads to an increase in employment of 0.321. 
+With our CGE model, the same investment shift yields the same employment impact.
+
+This comparison shows that under the assumption of fixed wages, the effects of sector-specific wage differences are similar in CGE and IO models. 
+
+\subsubsection{Conclusions on wage differentials}
+We have studied the impact of wage sectoral difference with two simple frameworks. 
+The first one focused on the differences in labour skills across sectors. 
+The second one considered sector-specific labour with exogenous wage difference between sectors, which can represent bargaining power as well as intersectoral training and reconversion inertia.
+In both these frameworks, the results of IO and CGE modelling were identical as to the impact of sectoral wages differences. 
+
+
+\subsection{The share of imports: favouring local production?} \label{subec:importShare}
+We now turn to the part related to imports. How different is the impact of trade between an IO model and a CGE?
+To investigate this question, we start again from our first stylised CGE model from subsection \ref{subsec:labourShare}, but this time we add a representation of trade.
+
+We use a modelling framework similar the standard CGE presented in the textbook by \citet{Hosoe2010}. For imports, we consider an imperfect substitution between domestic and imported products through the use of an Armington specification. For exports, we consider a perfect substitution with the domestic good
+%. In other words, we model a constant elasticity of transformation (CET) function between exports and domestic goods with an infinite elasticity
+ (eq. 19-21). 
+
+Finally, we make the assumption of a small economy for both imports and exports. At a given world price, the country can import as much as it wants from the rest of the world, which is an infinite supplier at a fixed price (eq14). And the country can export infinitely to the rest of the world at a given price (eq. 13). These assumptions are in line with the hypothesis of fixed prices in IO models.
+
+A more complete description of this model is available in appendix \ref{app:open_economy_model}.
+
+In table  \ref{tab:openModel}, we list the equations of the open-economy CGE and IO models.
+Compared to the closed version, this new table highlights that there are three additional differences between a CGE and an IO model: 
+\begin{itemize}
+	\item The first one is the assumption about trade closure (eq. 8). IO models consider that foreign savings are endogenous, which means there is infinite supply of foreign savings at given world prices. CGE models present two options for trade closure. This is because moving from a closed to an open economy adds one equation (the trade balance, eq. 15) and two new variables: foreign savings $S^f$ and exchange rate $\epsilon$. One of these two variables has to be defined exogenously to close the model. Choosing $\epsilon$ as exogenous, and keeping it constant is similar to IO models, which assume constant prices so a constant real exchange rate $\epsilon$. This closure also allows to study movement in the trade balance. Choosing $S^f$ is the opposite option. It means the country cannot borrow more from the rest of the world. Any change in investment or revenue has to be financed domestically.
+	
+	\item The second difference is the Armington function of the CGE and its corresponding demand functions for imports and domestic good (eq. 16-18). 
+	The original idea of \citet{Armington1969} was to present a theory of demand that distinguishes products based on their place of production. 
+%But this Armington specification can also be used as a a proxy to represent the fact that one sector of an economic model regroups a variety of different goods, hence imperfect substitutes. This is in line with the findings that "the level of aggregation is important; the more disaggregate the sample the higher the estimated [Armington] substitution elasticity" \citep{McDaniel2002}. 
+With this modelling, the volume of imports depends on the ratio of prices between the Armington composite good and the imported good. On the contrary, volumes of imports are fixed in share in an IO model. 
+%The choice of an Armington specification implies a certain level of monopoly power for the country in the CGE, with terms of trade effects, which are absent from IO models.
+	
+	\item The third difference relates to exports. IO models assume exogenous, often fixed, volumes of export. In other words, demand from the rest of the world is considered perfectly inelastic. On the contrary, in our CGE model, we assume an infinitely elastic demand from the rest of the world (eq. 13). These are two polar cases for modelling exports. With respect to exports, IO models diverge largely from the literature, which finds that export price elasticities are below one \citep{Ducoudre2014}.
+\end{itemize}
+
+\begin{table}[!h]
+	\centering
+	\caption[Comparative equations of IO and CGE models.]{Comparative equations of IO and CGE models. Identical equations are not repeated to facilitate reading. The main differences with the closed version shown in table \ref{tab:closedModel} have their equations labelled in bold.}
+	\label{tab:openModel}
+	\begin{tabular}{llll}
+		\toprule
+		Num & Description & Standard CGE 2 & IO model \\
+		\midrule
+		eq1 & Production function & $Z_j=scZ_j \cdot (\sum_h \delta_{h,j} F_{h,j} ^{\rho^z})^{1/\rho^z}$  &  $Z_j = min_h(\frac{F_{h,j})}{a_{h,j}})$\\
+		eq2 & Factor demand & $F_{h,j} = ( scZ_j^{\rho^z} \cdot \delta_{h,j} \cdot p^z_j / p^f_h )^{\sigma^z} \cdot Z_j$ & $F_{h,j} = a_{h,j} Z_j$ \\
+		eq3 & Household income & $Inc = \sum_h p^f_h \cdot FF_h$ & $idem$ \\
+		eq4 & Household demand of goods  & $C_i = \frac{\alpha^U}{p^x_i} \left( Inc - S^p\right)$ & $C_i = \overline{C_i}$ \\
+		eq5 & Unemployment & $ U =  1 - FF_{LAB}/Pop$ & $p^f_{Lab} = 1$ \\
+		eq6 & Labor supply & $\log(\frac{p^f_{LAB}}{pc}) = - \gamma \log(U/U^0) $ & $p_{Lab} = 1$ \\
+		eq7 & Capital supply & $FF_{CAP} = \overline{FF_{CAP}} $ & $p^f_{CAP} = 1$ \\
+		eq8 & Investment & $I=\overline{I} $ & $idem$ \\
+		eq9 & Private savings & $S^p = \sum_i p^x_i I_i - \epsilon \cdot S^f$ & $idem$ \\
+		\textbf{eq10} & \textbf{Trade closure} & $S^f = \overline{S^f}$  \quad OR \quad $\epsilon = \overline{\epsilon}$ & $\epsilon = \overline{\epsilon}$ \\
+		eq11 & Balance for domestic good & $Q_i = C_i + I_i$ &  $idem$ \\
+		eq12 & Balance for factors & $FF_h = \sum_j F_{h,j}$ &  $idem$ \\
+		eq13 & Price equality & $p^x_i = p^z_i$ & $idem$ \\ 
+		eq14 & Consumption price index & $p^c=\prod_i \left( p^x_i \right) ^{\alpha^u_i}$ & $idem$ \\
+		\textbf{eq15} & \textbf{Export demand} & $p^e_i=\epsilon \cdot \overline{p^{We}_i}$ &  $E_i = \overline{E_i}$ \\
+		eq16 & Import supply & $p^m_i=\epsilon \cdot \overline{p^{Wm}_i}$ & $idem$ \\
+		eq17 & Trade balance & $\sum_i \overline{p^{We}_i} E_i + S^f = \sum_i \overline{p^{Wm}_i} M_i$ & $idem$ \\
+		\textbf{eq18} & \textbf{Armington function} & $Q_i = scQ_i (\alpha^m_i M_i^{\rho_Q} + \alpha^d_i D_i^{\rho_Q}  )^{1/\rho_Q} $ &  $p_i^Q Q_i + p_i^e E_i = p^m_i M_i + p^d_i D_i$ \\
+		\textbf{eq19} & \textbf{Imports demand} & $M_i = \left( scQ_i^{\rho_Q} \cdot \alpha_i^m \cdot \frac{p_i^Q}{p_i^m} \right)^{\sigma_Q} Q_i$ & $M_i=\lambda^m_i \cdot (Q_i+E_i)$\\
+		\textbf{eq20}  & \textbf{Domestic demand} & $D_i = \left( scQ_i^{\rho_Q} \cdot \alpha_i^d \cdot \frac{p_i^Q}{p_i^d} \right)^{\sigma_Q} Q_i$ & $Z_i=\lambda^z_i \cdot (Q_i+E_i)$\\
+		eq21 & CET function & $Z_i = E_i + D_i$ & $idem$ \\
+		eq22 & Supply of E & $p_i^e = p_i^z $ & $idem$ \\
+		eq23 & Supply of D & $p_i^d = p_i^z  $ & $idem$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+To estimate the impact of these differences in the modelling of trade, we consider again a two-sector, two-good economy. In this case, we suppose that the two sectors are identical, except for their shares of imports. The corresponding SAM is represented in table \ref{tab:openEconomy}.
+Again, we set the matrix of intermediate consumption to zero in order to make our case more intuitive, without loss of generality.
+
+\begin{table}[!h]
+	\centering
+	\caption{SAM of an open economy}
+	\label{tab:openEconomy}
+	\begin{tabular}{llllllll}
+		\toprule
+		& S1 & S2 & LAB & CAP & HOH & INV & EXT \\
+		\midrule
+		S1 &  &  &  &  & 8 & 4 & 3 \\
+		S2 &  &  &  &  & 12 & 4 & 3 \\
+		LAB & 9 & 9 &  &  &  &  &  \\
+		CAP & 5 & 5 &  &  &  &  &  \\
+		HOH &  &  & 18 & 10 &  &  &  \\
+		INV &  &  &  &  & 8 &  &  \\
+		EXT & 1 & 5 &  &  &  &  &  \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+We now simulate a shift of one unit of investment from S2 towards S1, the sector with lower import rates. A quantitative detail of the results is available in appendix \ref{subsec:open_economy_results}, but we highlight here the main idea. 
+
+In IO, there is a positive effect of targeting the sector with lower import rates. The total amount of imports is reduced by 0.2, while exports remain constant by assumption. The net balance of trade improves by 0.2. And these import reductions translate into an increase in domestic production and domestic value added (+0.2), which in turn generate more jobs. Overall, there is an increase in labour by 0.07 in IO.
+
+In our CGE, let us first consider the first trade closure, with endogenous exchange rate $\epsilon$ and constant foreign savings $S^f$. Results are given in table \ref{tab:SAM_CGE_openEconomy}. Within this framework, a reallocation of final demand towards S1 increases imports in S1 (+0.08) and decreases imports in S2 (-0.31), for an overall reduction in imports (-0.23). But this overall decrease in imports is met by an equal reduction in exports (-0.92 in S1 and +0.69 in S2, for a net reduction of 0.23).
+Private consumption is left unchanged.
+Overall, the shift in demand decreases imports, but it translates into lower exports rather than higher domestic production. This is a clear divergence with IO results. Reallocation of final demand does not create jobs through the import channel in a CGE in a flexible exchange rate regime. They only lead to a shift of the labour force towards S1. 
+These results are insensitive to the choice of the Armington elasticity, even if we consider different elasticities for the two sectors. 
+
+\begin{table*}[!h]
+	\centering
+	\begin{minipage}{.3\textwidth}
+		\centering
+		\caption{CGE results in an open economy with fixed foreign savings $S^f$}
+		\label{tab:SAM_CGE_openEconomy}
+		\begin{tabular}{llllll}
+			\toprule
+			& S1 & S2 & HOH & INV &  EXT\\
+			\midrule
+			S1 &  &  & 8.00 & 5.00 & 2.08 \\
+			S2 &  &  & 12.00 & 3.00 & 3.69 \\
+			LAB & 9.00 & 9.00 &  &  &  \\
+			CAP & 5.00 & 5.00 &  &  &  \\
+			EXT & 1.08 & 4.69 &  &  &  \\
+			\bottomrule
+		\end{tabular}
+	\end{minipage}
+	\hspace{2.5cm}
+	\begin{minipage}{.3\textwidth}
+		\centering
+		\caption{Open economy with a fixed exchange rate $\epsilon$ and fixed exports}
+		\label{tab:SAM_IO_OpenEconomy_noBudget_fixE}
+		\begin{tabular}{llllll}
+			\toprule
+			& S1 & S2 & HOH & INV & EXT \\
+			\midrule
+			S1 &  &  & 7.88 & 5.00 & 3.00 \\
+			S2 &  &  & 11.82 & 3.00 & 3.00 \\
+			LAB & 9.52 & 8.48 &  &  &  \\
+			CAP & 5.29 & 4.71 &  &  &  \\
+			EXT & 1.07 & 4.63 &  &  &  \\
+			\bottomrule
+		\end{tabular}
+	\end{minipage}
+\end{table*}
+
+With these hypotheses, the model is unstable: household consumption increases by almost 40\% and exports drop to zero, as shown in table \ref{tab:SAM_IO_OpenEconomy_noBudget}. Consumption is financed through a raise in foreign investment (+7.41). But this increased consumption is a model artefact, as the model does not account for the payback of this foreign loan. This result highlights that the two assumptions of IO models regarding the behaviour of imports and exports are necessary in order to avoid a strong and artificial change in trade patterns. 
+
+We now look at the alternative trade closure for the CGE, with exogenously fixed exchange rate and endogenous foreign savings. However, if we only change this assumption, household will stop exporting as they do not need to pay for their imports any more (cf. table \ref{tab:SAM_IO_OpenEconomy_noBudget} in appendix). 
+To avoid the bias of vanishing exports, we test a second formulation. We keep the constant exchange rate and assume, in addition, that exports are constant, as in IO models. With this formulation, a shift in investment towards sector S1 does improve the trade balance (see table \ref{tab:SAM_IO_OpenEconomy_noBudget_fixE}). 
+Imports slightly increase in sector S1, but decrease more in sector S2, leading to an overall reduction of imports. There is also a job shifting towards S1.
+However, there is no increase in wage nor any increase in employment. The reduction in imports does not translate into more jobs, but into less private consumption, and thus a lower utility.
+In IO models, private consumption was supposed to be constant and exogenous. But in a CGE, if we assume constant exports like in an IO model, a shift entails a decrease in private consumption.
+
+This comparison between an IO model and a CGE model for an open economy yields two conclusions. 
+First, the assumptions of fixed exports in an IO model is very strong, considering that exports vary in a CGE model when investment changes. Such a hypothesis of constant exports should be justified. 
+Second, a shift towards a sector with lower import can lead to a shift in the labour force, but does not increase employment in a CGE. This holds true for the two possible trade closure: an exogenous exchange rate and exogenous foreign savings.
+This conclusion is a strong case against the second intuition of IO analysis: reducing imports is not a lever to create jobs. 
+
+%%%%%%
+
+\section{Full model comparison} \label{sec:fullModel}
+
+In this section, we turn to a more quantitative analysis of the employment impact of CGE and IO models.
+The stylized examples of the previous sections have helped identify the three major determinants of employment creation in IO models, and how they change in a CGE model.
+We now turn to a comparison of full-fledged IO and CGE models, with 58 sectors.
+This section will thus bring together the previous parts, adding up the effects and catching the possible interactions. It will provide quantitative results on job creation, while the previous section was more qualitative. 
+
+In addition, a complete model will take into account some aspects that have been omitted so far. In particular, this last CGE model will consider the role of the government and tax collection. This aspect is often neglected in input-output analyses. With IO models, the presence of taxes or subsidies can induce a bias in employment content, artificially raising or reducing it for some sectors \citep{Perrier2017}.
+To avoid this bias, the change in government revenues should be corrected in IO analysis. But this aspect is rarely mentioned and even less dealt with.
+By contrast, in the CGE, we will consider that the government's budget constraint is met, taking into account all sources of revenues. 
+Thus, an increase in investment in sectors with low taxes or high subsidies will lead to an increase in direct taxes on households, so that the government revenues remain constant.
+
+
+\subsection{Scenario}
+We focus on two case studies: the improvement of building weatherproofing, and the installation of solar panels on roofs. 
+An investment in weatherproofing decreases the need for heating, and thus the consumption of gas or electricity, depending on the heating system. Similarly, an investment in private solar panels will lead to self-production of power, and thus reduce electricity consumption from the network. 
+In each case, we suppose that there exist an investment which is cost-effective; in other words, that the discounted benefits of a reduced consumption are equal to the initial investment costs. This assumption allows to focus on the difference of employment impacts \textit{ceteris paribus}. And it seems plausible in both cases: the plunging costs of solar panels have made this technology competitive, or close to competitive, in many countries\footnote{According to the \citet{InternationalEnergyAgency2015}, "at the low-end costs [of renewable technologies] are in line with – or even below – baseload technologies".}; refurbishment can also be competitive\footnote{In another report, the \citet{InternationalEnergyAgency2013} states that "Some of the technologies needed to transform the buildings sector are already commercially available and cost effective, with payback periods of less than five years"}.
+
+We also suppose that power and heat production are determined by the technological environment and by the "basic needs" to heat a house and power all white goods. From a modelling perspective, we use a Stone-Geary utility function, with a subsistence consumption level (the basic need) for the electricity, gas and heat sector.
+With these hypotheses, the exogenous basic need is formally equivalent to an exogenous investment. The results of the previous sections can thus be applied.
+
+We study a scenario with an investment of one billion euros in weatherproofing or solar panels, and a (discounted) reduction in consumption of one billion in the power, gas and heat sector.
+The results are compared to the initial equilibrium. 
+
+
+\subsection{CGE model description}
+Our CGE model is based on a textbook by \citet{Hosoe2010}, the equations of which are available in the online model library of the GAMS community.\footnote{\url{https://www.gams.com/latest/gamslib\_ml/libhtml/gamslib\_stdcge.html}}
+We use this standard model in order to avoid as much as possible any "black-box" criticism, and to provide general, standard results.
+
+Our CGE model is based on the exact same input-output table used in the IO analysis. But it adds an additional layer with flexible prices and utility maximization of household based on consumption.
+
+Government taxes production, final consumption of households and investment at constant rates.  It also directly taxes a fraction of household revenues. Capital supply is fixed. 
+
+This model incorporates the assumption of a small economy, which means that foreign prices are considered fixed. Supply of imports and demand for exports are supposed to be infinitely elastic.
+Demand for imports is represented through an Armington specification. Exports and domestic good are supposed to be imperfectly substitutable, as represented by a CET function.
+
+We make only three changes to the textbook model of \citet{Hosoe2010}, in order to adapt it to our research question. 
+First, we expand the modelling of the labour market. We introduce two skills for labour: low skilled and high skilled, in order to represent and explain wage differences between sectors. And we replace the assumption of fixed labour by a wage curve, in order to study the impact of investment policies on employment.
+Second, we modify the macro closure. Instead of the closure driven by a fixed saving rate, we use a closure based on exogenous investments (as was the case with our small-scale examples). This new closure allows a better parallel with IO models, in which investments are exogenous; and it is commonly used in the literature on green jobs \citep{Lehr2008,Lehr2012}.
+Third, we make government consumption exogenous and constant, in order to avoid variations in government expenditures which may cloud results on employment. The government adjusts its budget by choosing the rate of direct tax on household. It also collects taxes from production and consumption, but at fixed rates.
+
+More information on this model can be found in appendix \ref{sec:full_model}.
+
+\subsubsection{Data}
+To calibrate our model, we use four data sources in our analysis. The first three are collected and provided by the French national institute of statistics, the INSEE. The last one is from \citet{Garrett2017}.
+\begin{itemize}
+	\item The 2013 input-output tables for France, at the 64 products levels, based on the NACE Rev. 2 classification. One table represents the French domestic balance between supply and use, and the other table the total French economy. The difference between these two tables yields the import table.\footnote{The data used in this chapter is thus more recent than in chapter \ref{chap:TE_Emploi}, in which we used data from 2010, because it was the only one available to us at the time we wrote the corresponding article.}
+	\item The number of full-time equivalent (FTE) jobs, at the same level of disaggregation and with the same classification.
+	\item The amount of tax collected by the public administration. We use the table of integrated economic account by INSEE.\footnote{\url{https://www.insee.fr/en/statistiques/2561550?sommaire=2387999}}
+	\item Finally, the cost structures of solar PV and weatherproofing. We use the literature review provided by \citet{Garrett2017}.
+\end{itemize}
+
+However, to avoid some issues with negative value, we aggregate some sectors together (see appendix \ref{app:full_model_data} for more details). With these manipulations, we end up with 58 sectors. We apply the same grouping to employment data.
+
+We estimate the investment vectors in weatherproofing and solar PV from \citet{Pollin2015}. These vectors are shown in table \ref{tab:IO_vectors}.
+
+\begin{table}[!h]
+	\centering
+	\caption{IO vectors from \citet{Pollin2015} as quoted by \citet{Garrett2017}}
+	\label{tab:IO_vectors}
+	\begin{tabular}{p{0.4\linewidth}cc}
+		\toprule
+		Label  & Solar & weatherproofing \\
+		\midrule
+		Construction& 0.3 & 1 \\
+		Fabricated metal products& 0.175 &  \\
+		Machinery& 0.175 &  \\
+		Computer and electronic products& 0.175 &   \\
+		Miscellaneous professional, scientific, and technical services& 0.175 &   \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+
+\subsubsection{Preliminary analysis of energy sectors}
+Before turning to the numerical application, let us examine a few metrics to understand the mechanisms at play, in line with the analysis in section \ref{sec:smallModels}. The import rate, share of labour, wage and employment content of the sectors we considered are shown in table \ref{tab:descriptiveRatios}. 
+For solar and weatherproofing, the ratios are based on the synthetic industry approach of \citet{Garrett2017}: we use a weighted average of existing sectors, using the weights indicated in table \ref{tab:IO_vectors}.
+The import rate, wage and employment are direct measures for each sector. They represent only the first round-effect, not all the inter-industry effects. But they provide a first-order approximation as to the employment impacts of targeting each sector.
+In France, the "electricity and gas" sector has a low share of labour in value added, as well as high salaries, compared to solar panels and weatherproofing. As shown in our previous analyses in section \ref{sec:smallModels}, these two factors will induce job creation when investing in solar or weatherproofing, at the expensive of the traditional electricity or gas sector.
+The third factor, import rates, is higher for solar panels: 23\% against 0\% for weatherproofing and 0.5\% for electricity and gas. This latter value might seem quite low, but this is partly because fossil fuels only represent of the French power mix, due to a high proportion of nuclear energy and hydropower. In a CGE, the high import rate of solar should not play a major role (cf. section \ref{subec:importShare}), but it affects negatively employment in IO analysis (and conversely a low import rate import rate affects positively employment in IO).
+
+\begin{table}[!h]
+	\centering
+	\caption{Descriptive direct ratios}
+	\label{tab:descriptiveRatios}
+	\begin{tabular}{p{0.2\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}}
+		\toprule
+		& Import rate (\%) & Share of labour in value added (\%) & Wage (\euro / ETP)  \\
+		\midrule
+		Solar & 23 & 81 & 56 \\
+		weatherproofing & 0 & 82 & 48 \\
+		Electricity, gas and air-conditioning & 0.5 & 39.2 & 92.5 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+
+\subsection{Results}
+We now run the CGE model with central values for all parameters (sensitivity analyses will follow), as well as the IO model. 
+For each model, we compute the number of jobs created by investing one billion euros in the technology indicated in the first column (solar panels or weatherproofing), and reducing electricity or gas consumption by the same amount.
+We can then calculate the \textit{discrepancy ratio} between the two models, i.e. the number of jobs created in IO divided by the number of jobs created in the CGE.
+Table \ref{tab:results} shows that encouraging refurbishment or the installation of solar panels both generate positive employment impacts.
+In line with our preliminary analysis, we can link these effects to the higher share of labour in value added, as well as to the lower wages in those sectors, compared the "electricity and gas" sector.
+Second, we measure a discrepancy ratio of 1.07 and 1.51 for solar and weatherproofing respectively. The IO model yields higher estimates, but the discrepancy is smaller than other values in the literature. For example, \citet{Dwyer2005} found a ratio of 4.6 (but for a very different scenario: he was studying the impacts of a Grand Prix).
+
+\begin{table}[!h]
+	\centering
+	\caption{Employment impacts of investing in solar panels or weatherproofing \\ (in full-time equivalents for an investment of one billion euros)}
+	\label{tab:results}
+	\begin{tabular}{lccc}
+		\toprule
+		Techno & Job creation in CGE* & Job creation in IO & Discrepancy ratio \\
+		\midrule
+		Solar & 4,670 & 5,010 & 1.07 \\
+		weatherproofing & 5,331 & 8,050 & 1.51 \\
+		\bottomrule
+	\end{tabular}
+	\caption*{*For a capital-labour elasticity $\sigma_{KL}$ = 0.5 and a wage curve elasticity $\gamma$ = 0.1}
+\end{table}
+
+
+\subsection{Sensitivity analyses}
+
+\subsubsection{Impact of the wage curve and the capital-labour elasticity}
+The employment results of a shift in final demand are represented in table \ref{tab:wageCurve} for the CGE model.
+
+For all the values considered, there are positive employment impacts, but both the wage curve elasticity and the capital-labour elasticity have a strong influence on results. The employment impact decreases with both wage curve elasticity and capital-labour elasticity.
+The intuitions for these results is as follow. The two sectors considered have a higher share of labour and lower wages than their electricity counterpart. Encouraging them thus increases demand for labour. This increased demand raises the price of labour, and thus induces some substitution with capital, which reduces the initial effect of increased labour demand. The higher the capital-labour elasticity, the stronger is this negative feedback.
+And the price increase in that loop is driven by the wage curve elasticity. The higher this elasticity, the stronger will be the price increase due to the additional labour demand. 
+
+\begin{table}[!h]
+	\centering
+	\caption{Sensitivity to the wage curve and the production function}
+	\label{tab:wageCurve}
+	\begin{tabular}{ll|rrr}
+		\toprule
+		Techno & gamma & CobbDouglas & CES & Leontief \\
+		\midrule
+		Solar & 0 & 11,717 & 11,713 & 11,710 \\
+		Solar & 0,05 & 5,429 & 6,677 & 8,814 \\
+		Solar & 0,1 & 3,542 & 4,670 & 7,113 \\
+		\midrule
+		weatherproofing & 0 & 13,316 & 13,304 & 13,292 \\
+		weatherproofing & 0,05 & 6,287 & 7,610 & 9,872 \\
+		weatherproofing & 0,1 & 4,135 & 5,331 & 7,917 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+These results highlight the importance of the capital-labour elasticity for employment impacts. 
+\citet{VanderWerf2008} made empirical estimations of this elasticity, and found values between 0.2 and 0.6, depending on the country.  He also noted that many CGE models nevertheless use a Cobb-Douglas function, i.e. a unitary elasticity. In our model, using a Cobb-Douglas function leads to underestimating the positive impacts on employment by at least 17\%, if the elasticity were in fact 0.6, and up to 40\%, if the elasticity were in fact 0.2 (see appendix \ref{tab:CobbDouglasError}).
+
+Table \ref{tab:wageCurve} also indicates that employment impacts can be higher in the CGE than in the IO model for low values of the wage curve elasticity and/or of the capital-labour elasticity.
+This result goes against the intuition that IO models always provide higher estimates than CGE models.
+A first explanation for this phenomenon has been drawn in section \ref{subsec:labourShare}: in a CGE, an increase in labour demand also decreases capital price, thus raising real revenues and the incentive to work. By contrast, in IO models, capital prices are fixed, so this price effect is absent.
+An additional explanation was provided in section \ref{subec:importShare}, linked to the impacts of imports. Solar panels have high import rates, but this does not alter their employment impact in a CGE - only their high labour share in value added and low wages impact do. The electricity and gas sector also present imports in intermediate consumption, with similar impacts. Conversely, in IO models, this low import rate reduces their employment impact.
+
+These two effects combine and help explain the higher job creation in CGE models for low values of wage curve and capital-labour elasticities. These results also show that an IO model is not equivalent to a CGE with Leontief production functions and constant wages: the fixed price of other goods in IO model, including capital prices, and the differences in the modelling of exports are also sources of major divergences.
+
+\subsubsection{Impact of trade}
+To explore the impact of trade assumptions, we first run sensitivity analyses on the elasticities of the Armington and the CET function. Results are shown in figures \ref{fig:armington} and \ref{fig:cet} in appendix.
+In both cases, a higher elasticity reduces job creation, but this impact is limited: tripling one of the elasticities, from 2 to 6, only reduces job creation by 8\%.
+
+Another question regarding trade modelling is related to the choice of the trade closure. So far, we have considered that the net investment of the rest of the world ($S^f$) was constant. In other word, we have supposed that the trade deficit was constant, and that the real exchange rate adapts.
+The extreme opposite of that assumption would be to suppose that the exchange rate $\epsilon$ is fixed and foreign investment is free. This hypothesis is equivalent to supposing that states can borrow indefinitely from foreign markets, without incurring any penalty. It is not necessarily realistic, in particular for large changes in investment and deficit. Reality might be in-between these two extremes assumptions. 
+We investigate the impact of changing the trade closure. When changing from a fixed deficit to a fixed exchange rate, the results decrease by only 2\% for solar and 1\% for weatherproofing. So the impact of the closure rule is small in our scenarios.
+
+\subsubsection{Full sensitivity analysis: difference between CGE and IO}
+Finally, we make a full sensitivity analysis, to see the range of possible discrepancy ratios. We make the wage curve elasticity vary from 0.2 to 0.6, which is the range observed empirically by \citet{VanderWerf2008}. We use CET and Armington elasticities between 1.5 and 6. For all these values, we compute the discrepancy ratio of job creation between IO and CGE models. 
+The complete table of this sensitivity analysis is available in appendix, in section \ref{sec:full_sensitivity}.
+The discrepancy ratio varies between 0.83 and 1.34 for solar, and between 1.19 and 1.87 for weatherproofing. The results of IO models are up to 87\% higher than CGE's, but they can also by 17\% lower. The low discrepancy ratios are obtained when capital-labour, Armington and CET elasticities are all small.
+
+%%%%
+
+\section{Concluding Remarks} \label{sec:conclusion4}
+
+In this paper, we have looked at the determinants of job creation through a reallocation investment towards low-carbon sectors.
+We have shown that the net impact of such a shift depends on three parameters in input-output modelling: labour shares in value added, wages and import rates of each sector.
+IO models conclude to a positive impact if the shift benefits sectors with a high share of labour in value added, low wages or low import rates.
+
+We have then tested to what extent these conclusions stand in a CGE framework. 
+This comparison exercise yields the following conclusions for each of the three effects:
+\begin{itemize}
+	\item Labour share: In a CGE, targeting sectors with a high labour share also increases employment, but to a lower extent than in IO models. This is the result of two diverging effects. First, because of flexible prices and substitution possibilities towards capital, the increase in labour demand is lower in a CGE than in IO, and leads to a smaller job creation effect. Second, as sectors with a high labour share are also sectors with a low capital share, targeting these sectors in a CGE depresses capital prices. This raises the real wage and thus increases labour supply in a CGE compared to IO, leading to a larger job gain. These two effects act in opposite directions, but the first one prevails, and the impact of targeting sectors with high labour share is lower in a CGE that in IO.
+	
+	\item Wages: Targeting sectors with low wages have the same positive impact in CGE and IO models. The labour market representation is much simpler in IO, with an assumption of constant wage. But this simple representation yields the same results as more sophisticated ones with a wage curve representation of labour supply, and labour skills variability or imperfect labour mobility to explain sectoral wage differences. Shifting demand generates exactly the same number of jobs, irrespective of the wage curve elasticity or of the substitutability between the different types of labour skills.
+	
+	\item Trade: The employment impacts of encouraging sectors with low import rates diverge strongly between the two models: there is no positive impact in the CGE, but a positive effect in IO. 
+	In IO models, exports are often exogenous and constant, which means that demand from the rest of the world is perfectly inelastic. And the rate of import is fixed. Targeting sectors with lower import rates improves the trade balance, resulting in in-shoring value added and jobs. 
+	By contrast, in a CGE, demand from the rest of the world is elastic, and the supply of export is competing with domestic use. With these modelling assumptions, the reallocation of final demand does not create employment trough trade in a CGE. And this result holds true for the two polar cases of trade closure in a CGE: an exogenous trade balance or a fixed exchange rate. When targeting sectors with lower import rates in a CGE, the reduction in imports translates either into a fall in exports (for the exogenous foreign investment) or a reduction of private consumption (for the exogenous exchange rate).
+	The handling of trade is thus a major divergence between IO and CGE models.
+\end{itemize}
+
+Finally, we undertook a quantitative analysis of the employment impacts of investing in weatherproofing of solar panels, taking into account the benefits in terms of reduced residual consumption of power and gas. We used two models, a full-fledged CGE and an IO model, and based on the exact same data with 58 sectors.  
+Our numerical application indicates that both of these investments have a positive effect on employment, a results which is robust across models. This positive impact is due to a higher share of labour and lower wages in these sectors, compared to the "electricity and gas" sector. The results are roughly similar in IO and CGE for solar, with a discrepancy ratio between 0.83 and 1.34 for the range of parameters considered; for weatherproofing, the results are higher in IO, with a discrepancy ratio ranging from 1.19 to 1.87.
+
+The literature generally assumes that employment impacts are higher in IO than in CGE models, because the first type does not account for all negative feed-backs. In this paper, we show that IO models also have one retroaction that is potentially less favourable than in CGE: the price of capital is fixed in IO, while it might decrease (or increase) in a CGE.
+Our results also highlight that the divergence of the two models crucially depends on the origin of the economic mechanisms: the wage level, the labour share or the import rate.
+Encouraging sectors with a high labour share or low wages generates employment in both CGE and IO models. IO models provide a good approximation of CGE results as to the impacts of wage on employment. They also provide the same direction for the labour-intensity effect, although they provide higher estimates of their impacts. 
+But CGE and IO models diverge significantly concerning the importance of import rate. We see no positive impact of targeting sectors with low import rates in a CGE, but a strong positive impact in IO. Trade impacts are thus an important difference between IO and CGE, although overlooked in the literature.
+Finally, from a quantitative point of view, employment impacts are similar across the two models for investment in solar energy, and slightly higher in IO for investment in weatherproofing -- with a discrepancy ratio much lower than other literature estimates. IO might thus be a reasonable approximation of CGE models for estimating employment impacts, at least in these two sectors. This result holds if CGE models are based on capital-labour elasticities consistent with literature estimates, but many CGE overestimate this elasticity, which leads to underestimating employment impacts by 17\% to 40\% in our scenarios. 
+
+Our approach suffers from obvious limitations. We do not investigate all the possible modelling specifications of the labour market, be it the Phillips curve, labour search and matching or else. Still, we believe the wage curve specification we look at provides interesting results because this framework is widely used by the CGE modelling community.
+Our representation of trade was kept simple. Monetary effects are also absent from our model. Our work should thus be taken with the assumption that the monetary policy does not impact our results. This might hold true if the monetary policy is kept constant, or if it is not directly under the control of the government, like in the Euro area.
+
+From a policy perspective, our findings indicate that positive employment impacts can be obtained by shifting investment towards labour-intensive or low-wages sectors. Targeting renewable sectors with such characteristics might thus yield a double dividend.
+But our results also question the relevance of the argument that local renewable energies boost employment by reducing imports. The prominence of this topic in policy communications seems inversely proportional to the robustness of its economic impacts. 
+

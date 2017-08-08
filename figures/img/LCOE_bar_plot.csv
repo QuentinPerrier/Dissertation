@@ -1,0 +1,12 @@
+Technology;Source;LCOE
+EPR;Boccard, 2014, Low;76
+EPR;Boccard, 2014, High;117
+EPR;Hinckley point;117
+EPR;Lazard, 2014, Low;84
+EPR;Lazard, 2014, High;121
+Historical;Best case, Low;56
+Historical;Best case, High;67
+Historical;Worst case, Low;69
+Historical;Worst case, High;80
+Wind;Current FIT;83
+Wind;Expected FIT 2050 (ADEME 100%EnR);65

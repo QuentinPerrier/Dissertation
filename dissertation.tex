@@ -1,0 +1,109 @@
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+% Pour changer de langue d'un paragraphe à l'autre, utiliser \selectlanguage{french} ou \selectlanguage{english}
+% Utiliser biblatex plutôt que natbib
+% Utiliser biber plutôt que bibtex
+% Utiliser xeLatex plutôt que Latex
+% (Ces options sont facilement configurables avec TexStudio, dans Préférences/Build)
+
+\documentclass[french,english]{cired-thesis}
+
+\addbibresource{chapter1/introduction.bib}
+\addbibresource{chapter2/nuclear_bet.bib}
+\addbibresource{chapter3/TE_emploi.bib}
+\addbibresource{chapter4/mechanisms.bib}
+\addbibresource{chapter5/conclusion.bib}
+
+\input{commands.tex} %commandes personnelles
+
+\begin{document}
+
+ %the front matter
+\frontmatter
+\input{frontmatter/coverpage}
+\selectlanguage{english}
+\maketitle %commande définie dans cired-thesis.cls. Inclut le logo et la date de soutenance
+
+\copyrightpage %commande définie dans cired-thesis.cls
+%\dedicationpage
+%\acknowledgments
+
+\selectlanguage{french}
+\frenchabstractpage
+
+\selectlanguage{english}
+\abstractpage
+
+\selectlanguage{french}
+\motscles
+
+\selectlanguage{english}
+\keywords
+\tableofcontents
+\authorlist
+\listoffigures
+\listoftables
+\acronyms
+
+\onehalfspacing
+
+\mainmatter %Commence la numérotation des pages et des sections
+
+% include each chapter...
+\newrefsection
+\selectlanguage{french}
+\include{chapter1/introduction}
+%\printbibliography[heading=subbibintoc,type=article,title={Articles only}]
+\phantomsection
+\printbibliography[heading=subbibintoc]
+
+\newrefsection
+\selectlanguage{english}
+\include{chapter2/nuclear_bet}
+\phantomsection
+\printbibliography[heading=subbibintoc] % L'option sert à ajouter la biblio à la table des matières
+%\addcontentsline{toc}{section}{Appendices} % Pour ajouter à la table des matières
+\begin{subappendices}
+\include{chapter2/appendix}
+\end{subappendices}
+
+\newrefsection
+\selectlanguage{french}
+\include{chapter3/TE_emploi}
+\phantomsection
+\printbibliography[heading=subbibintoc]
+\begin{subappendices}
+	\include{chapter3/appendix}
+\end{subappendices}
+
+\newrefsection
+\selectlanguage{english}
+\include{chapter4/mechanisms}
+\phantomsection
+\printbibliography[heading=subbibintoc]
+\begin{subappendices}
+	\include{chapter4/appendix}
+\end{subappendices}
+
+\newrefsection
+\selectlanguage{french}
+\include{chapter5/conclusion}
+\phantomsection
+\printbibliography[heading=subbibintoc]
+
+\singlespacing 
+
+% the back matter
+%\clearpage
+% \bibliography{thesis}
+% \addcontentsline{toc}{chapter}{References}
+% \bibliographystyle{julie_bibliostyle}
+%\selectlanguage{english}
+%\include{endmatter/colophon}
+%\appendix
+% \linenumbers*
+%\include{annexes/annex1}
+
+\end{document}
