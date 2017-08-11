@@ -2,6 +2,9 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
+% Set Xelatex and biber in your editor (e.g TexStudio)
+% To see the bibliography, run the tex twice, then run bibliography, then run the tex again.
+
 % Pour changer de langue d'un paragraphe à l'autre, utiliser \selectlanguage{french} ou \selectlanguage{english}
 % Utiliser biblatex plutôt que natbib
 % Utiliser biber plutôt que bibtex
@@ -59,51 +62,44 @@
 \phantomsection
 \printbibliography[heading=subbibintoc]
 
-%\newrefsection
-%\selectlanguage{english}
-%\include{chapter2/nuclear_bet}
-%\phantomsection
-%\printbibliography[heading=subbibintoc] % L'option sert à ajouter la biblio à la table des matières
-%%\addcontentsline{toc}{section}{Appendices} % Pour ajouter à la table des matières
-%\begin{subappendices}
-%\include{chapter2/appendix}
-%\end{subappendices}
-%
-%\newrefsection
-%\selectlanguage{french}
-%\include{chapter3/TE_emploi}
-%\phantomsection
-%\printbibliography[heading=subbibintoc]
-%\begin{subappendices}
-%	\include{chapter3/appendix}
-%\end{subappendices}
-%
-%\newrefsection
-%\selectlanguage{english}
-%\include{chapter4/mechanisms}
-%\phantomsection
-%\printbibliography[heading=subbibintoc]
-%\begin{subappendices}
-%	\include{chapter4/appendix}
-%\end{subappendices}
-%
-%\newrefsection
-%\selectlanguage{french}
-%\include{chapter5/conclusion}
-%\phantomsection
-%\printbibliography[heading=subbibintoc]
-%
+\newrefsection
+\selectlanguage{english}
+\include{chapter2/nuclear_bet}
+\phantomsection
+\printbibliography[heading=subbibintoc] % L'option sert à ajouter la biblio à la table des matières
+%\addcontentsline{toc}{section}{Appendices} % Pour ajouter à la table des matières
+\begin{subappendices}
+\include{chapter2/appendix}
+\end{subappendices}
+
+\newrefsection
+\selectlanguage{french}
+\include{chapter3/TE_emploi}
+\phantomsection
+\printbibliography[heading=subbibintoc]
+\begin{subappendices}
+	\include{chapter3/appendix}
+\end{subappendices}
+
+\newrefsection
+\selectlanguage{english}
+\include{chapter4/mechanisms}
+\phantomsection
+\printbibliography[heading=subbibintoc]
+\begin{subappendices}
+	\include{chapter4/appendix}
+\end{subappendices}
+
+\newrefsection
+\selectlanguage{french}
+\include{chapter5/conclusion}
+\phantomsection
+\printbibliography[heading=subbibintoc]
+
 %\singlespacing 
-%
-% the back matter
-%\clearpage
-% \bibliography{thesis}
-% \addcontentsline{toc}{chapter}{References}
-% \bibliographystyle{julie_bibliostyle}
-%\selectlanguage{english}
-%\include{endmatter/colophon}
-%\appendix
-% \linenumbers*
-%\include{annexes/annex1}
+
+
+\selectlanguage{english}
+\include{endmatter/colophon}
 
 \end{document}
