@@ -126,7 +126,7 @@ Or, les centrales nucléaires françaises atteignent aujourd’hui 40 ans, leur 
 
 \subsection{Méthodologie : Décision robuste et modèle d’optimisation du parc électrique}
 
-\subsubsection{Méthodologie pour déterminer des stratégies robustes}
+\subsubsection{Déterminer des stratégies robustes}
 
 Face à ces incertitudes, l’approche traditionnelle des économistes modélisateurs consiste à choisir a priori un jeu de paramètres pour trouver un optimum, puis à procéder à des tests de sensibilité en faisant varier les paramètres de départ sur les plages plausibles de valeurs. Si le résultat s’avère insensible, autrement dit si l’optimum reste invariant pour toutes les valeurs plausibles de paramètres, on peut alors conclure que l’on a trouvé un unique optimum.
 Mais que faire si les résultats varient avec différentes valeurs plausibles de paramètres ? 
@@ -268,35 +268,41 @@ Cet intérêt dépasse d'ailleurs la sphère académique, et se retrouve égalem
 \end{figure}
 
 C’est pour ces deux raisons, l’importance sociale de l’emploi et son potentiel de levier d’action dans la transition énergétique, que j’ai choisi l’emploi dans la transition énergétique comme deuxième thématique de ma thèse.
-Ma réflexion a d’abord porté sur la notion de contenu en emploi, souvent utilisé dans les médias, mais également dans les publications académiques. Qu’est-ce que le contenu en emploi ? Est-il plus élevé dans les secteurs de la transition énergétique ? 
-Si certains secteurs ont un contenu en emploi plus élevé, alors il serait possible de créer des emplois en réallouant la demande finale vers ceux-ci. Puisqu’il s’agit simplement de réallouer, et non d’augmenter les dépenses, cette mesure peut être particulièrement attractive pour des décideurs au budget contraint. Le contenu en emploi permet d'établir une mesure du bilan net de cette réallocation. Mais il reste muet sur les mécanismes économiques sous-jacents. 
-Les deux parties suivantes introduisent de façon plus détaillée les enjeux sur ces questions de contenu en emploi et de mécanismes économiques sous-jacents aux créations d’emploi.
-
-
+Plus précisément, ma réflexion a principalement porté sur deux sujets : le contenu en emploi des secteurs bas-carbone et sur les mécanismes économiques à l'origine de la création d'emploi. 
+Les deux parties suivantes introduisent de façon plus détaillée les enjeux pour chacun de ces sujets.
 
 
 \subsection{Le contenu en emploi des énergies renouvelables}
 
-\subsubsection{Contexte}
+\subsubsection{Un concept mal défini}
 L’avantage des renouvelables en termes d’emploi est souvent présenté comme découlant d'une raison très simple : les renouvelables auraient un contenu en emploi plus élevé. Par exemple, selon le réseau Sortir du Nucléaire, «~les renouvelables créent quinze fois plus d’emplois que le nucléaire~» \citep{Les7ventsduCotentin2009}. Greenpeace met en avant que cet avantage est dû au fait qu’il s’agit d’emploi «~de proximité~», «~non délocalisables~» \citep{Greenpeace2011}. Favoriser l’essor des renouvelables au détriment des énergies fossiles ou fissiles permettrait donc de générer de nombreux emplois.
+
+Si certains secteurs ont un contenu en emploi plus élevé, alors il serait possible de créer des emplois en réallouant la demande finale vers ceux-ci. Puisqu’il s’agit simplement de réallouer, et non d’augmenter les dépenses, cette mesure peut être particulièrement attractive pour des décideurs au budget contraint. Le contenu en emploi permet d'établir une mesure du bilan net de cette réallocation. Mais il reste muet sur les mécanismes économiques sous-jacents. 
 
 Mais la simplicité de ce message à vocation politique cache une complexité d’un autre ordre pour l’économiste. 
 %cf études sur le nucléaire ?
 La première concerne la définition même de contenu en emploi. Il existe en effet un flou important quant à l’unité de mesure : s’agit-il du nombre d’emploi par unité de puissance installée (kW) ? par unité d’énergie produite (kWh) ? par euro investi ou dépensé ? En pratique, ces différentes métriques coexistent dans la littérature académique : \citet{Cameron2015} observent des données en emploi par capacité installée, \citet{Quirion2013} des emplois par euro dépensé, \citet{Wei2010} par unité d’énergie produite. Mais elles sont-elles équivalentes en termes de résultats ? Quelle serait la meilleure métrique ?
 Une seconde difficulté provient de l’articulation de cette notion avec d’autres éléments du débat public. L’accent est parfois mis sur le fait que les renouvelables ont un caractère local, qu’ils permettent de réduire les importations de gaz ou de charbon. Ils sont également présentés comme étant intensifs en travail, plutôt qu’en capital. Quels liens établir entre ces arguments et la notion de contenu en emploi ?
-Il faut déjà distinguer les contenus bruts en emploi et les contenus nets en emploi. Les deux sont utiles à l'analyse : le brut pour les enjeux locaux, le net pour une échelle nationale. Nous nous intéressons ici à l’effet net sur l’emploi. Or, l'éolien et le solaire ont commencé à se développer avant d’être compétitifs, grâce à des subventions. Mais ces subventions doivent être financées, \textit{in fine} au moyen d’autres taxes générant potentiellement des réduction d’emplois dans d’autres secteurs. Comment prendre en compte ces effets indirects des subventions dans la mesure du contenu en emploi, afin de mesurer un impact net ?
+Enfin, il faut distinguer les contenus bruts en emploi et les contenus nets en emploi. Les deux sont utiles à l'analyse : le brut pour les enjeux locaux, le net pour une échelle nationale. Nous nous intéressons ici à l’effet net sur l’emploi. Or, l'éolien et le solaire ont commencé à se développer avant d’être compétitifs, grâce à des subventions. Mais ces subventions doivent être financées, \textit{in fine} au moyen d’autres taxes générant potentiellement des réduction d’emplois dans d’autres secteurs. Comment prendre en compte ces effets indirects des subventions dans la mesure du contenu en emploi, afin de mesurer un impact net ?
 
-\subsubsection{Question de recherche}
+\subsubsection{Décomposer le contenu en emploi}
+
 Ces interrogations m’ont amené à vouloir décomposer le contenu en emploi. Pourquoi ce contenu en emploi est-il plus élevé dans certaines branches ? Est-ce du fait d’importations plus faibles, d’une plus grande part du travail dans la valeur ajoutée, ou d’autres facteurs ?  Quels sont les facteurs prépondérants expliquant les divergences d’une branche à l’autre ?
+Ces questions impliquent de pouvoir décomposer le contenu en emploi, afin d'en faire ressortir les facteurs prépondérants.
 
-Au-delà de ce travail purement descriptif et explicatif, nous espérons pouvoir obtenir une connaissance permettant l’action. Les conséquences sont en effet très différentes si le contenu en emploi est élevé du fait d’importations faibles, ou de salaires faibles. Dans un cas, on relocalise la production et la valeur ajoutée, et donc les emplois. Il s’agit d’une politique économique au détriment de nos partenaires commerciaux ; dans l’autre, on baisse les salaires pour partager le travail,  «~gagner moins pour travailler tous~», en quelque sorte. Les conséquences économiques, politiques et sociales sont donc très différentes d’une situation à l’autre.
+Mais à travers ce travail descriptif et explicatif, nous espérons pouvoir obtenir une connaissance permettant l’action. Les conséquences sont en effet très différentes si le contenu en emploi est élevé du fait d’importations faibles, ou de salaires faibles. Dans un cas, on relocalise la production et la valeur ajoutée, et donc les emplois. Il s’agit d’une politique économique au détriment de nos partenaires commerciaux ; dans l’autre, on baisse les salaires pour partager le travail,  «~gagner moins pour travailler tous~», en quelque sorte. Les conséquences économiques, politiques et sociales sont donc très différentes d’une situation à l’autre.
 
 Enfin, nous espérons pouvoir dégager des secteurs favorables à la transition énergétique et sociale, en croisant ce contenu en emploi avec un contenu en émissions de gaz à effet de serre (GES). Si on peut déterminer des secteurs qui soient à la fois fortement créateurs d’emplois et faiblement émetteurs de GES, alors on aura trouvé ce double dividende emploi, cette politique sans regret. 
 
-\subsubsection{Méthodologie : l'Analyse Entrée-Sortie}
-%et les méthodes de décomposition d'index ?
-Pour ce travail, nous nous appuyons sur la méthodologie Input-Output (IO). 
-C’est une méthodologie couramment employée pour parler de contenu en emploi. 
+
+\subsubsection{Méthodologie : Analyse Input-output et décomposition LMDI}
+
+Pour ce travail, nous nous appuyons sur la méthode dite Entrées-Sorties, souvent appelée par sa traduction anglais: Input-Output (IO), et sur la méthode de décomposition d'indice dite LMDI (\textit{Logarithm Mean Divisia Index}).
+
+\vspace{1em}
+\textbf{Présentation de la méthode Input-Output}
+
+La méthode Input-Output, popularisée par Leontief \citep{Leontief1941}, permet d'établir un lien entre demande et production, en intégrant l'ensemble des échanges inter-industriels.
 Elle s'appuie sur les données de la compatibilité nationale, et en particulier sur les tableaux entrées-sorties (TES). Ces tableaux annuels décrivent la production industrielle à un niveau fin (64 secteurs) ainsi que les échanges industriels entre secteurs. Ils fournissent donc des informations précieux pour l'analyse.
 
 L'analyse Input-Output est très utile pour un travail descriptif.
@@ -306,7 +312,7 @@ En pratique, ces hypothèses restreignent le domaine d’utilisation du modèle 
 Enfin, pour prendre en compte les questions de financements des investissements, et donc bien mesurer un effet net (et non pas un effet brut), on peut travailler à budget constant.
 
 Avec ces précautions méthodologiques, les modèles IO continuent à être utilisés et des travaux publiés par la communauté des chercheurs. On trouve des analyses en de l'impact sur l'emploi de la transition énergétique, mais aussi des analyses sur les émissions des GES ou sur les chaînes de valeur \citep{Timmer2014}.
-Au global, les modèles input-output sont de plus en plus utilisés, comme le montre une interrogation de la base de données Web of Science : une recherche sur  «~input-output~»\footnote{Recherche effectuée la 17 juillet 2017. Requête exacte : «~TS=input-output AND SU=("Business \& Economics" OR "Environmental Sciences \& Ecology" OR "Energy \& Fuels")~»} montre une augmentation très rapide du nombre de modèle IO utilisés (cf. graphiques \ref{fig:WoS_IO}). Une recherche sur «~"input-output AND employment~»\footnote{Recherche effectuée le 17 juillet 2017. Requête exacte : «~TS=(input-output AND employment) AND SU=("Business \& Economics" OR "Environmental Sciences \& Ecology" OR "Energy \& Fuels")~»} montre également une augmentation (cf. graphique \ref{fig:WoS_IO_Environement}). 
+Au global, les modèles Input-Output sont de plus en plus utilisés, comme le montre une interrogation de la base de données Web of Science : une recherche sur  «~input-output~»\footnote{Recherche effectuée la 17 juillet 2017. Requête exacte : «~TS=input-output AND SU=("Business \& Economics" OR "Environmental Sciences \& Ecology" OR "Energy \& Fuels")~»} montre une augmentation très rapide du nombre de modèle IO utilisés (cf. graphiques \ref{fig:WoS_IO}). Une recherche sur «~"input-output AND employment~»\footnote{Recherche effectuée le 17 juillet 2017. Requête exacte : «~TS=(input-output AND employment) AND SU=("Business \& Economics" OR "Environmental Sciences \& Ecology" OR "Energy \& Fuels")~»} montre également une augmentation (cf. graphique \ref{fig:WoS_IO_Environement}). 
 
 \begin{figure}
 	\centering
@@ -324,32 +330,77 @@ Au global, les modèles input-output sont de plus en plus utilisés, comme le mo
 \end{figure}
 
 
+\vspace{1em}
+\textbf{La méthode de décomposition LMDI}
+
+Les méthodes de décomposition d'indice permettent de déterminer l'importance de divers paramètres quant à l'évolution d'un agrégat. Par exemple, dans le domaine de l'énergie, l'évolution des émissions est souvent décomposé, selon l'équation de Kaya, entre quatre facteurs : l'augmentation de la population, l'augmentation du PIB par habitant, l'intensité energétique et le contenu en carbone de l'énergie (cf. figure \ref{fig:kaya}). Quand les émissions augmentent d'une année à l'autre, les méthodes de décomposition d'indice permettent de comprendre les parts relatives joués par les différents facteurs. On peut alors comprendre si l'évolution des émissions est principalement tirée par la démographie, des effets de richesses, des progrès en efficacité énergétique ou des changements dans le bouquet énergétique.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=10cm]{figures/Kaya.pdf}
+	\caption[Décomposition de Kaya des émissions]{Décomposition de Kaya des émissions}
+	\label{fig:kaya}
+\end{figure}
+
+En pratique, plusieurs méthodes de décomposition d'indice existent aujourd'hui. Parmi les plus connus, on peut citer les indices de Laspeyres, de Paasche et de Fischer, utilisés notamment pour calculer l'indice des prix à la consommation ; mais d'autres indicateurs existent. La raison pour cette pluralité de méthodes est qu'aucune décomposition n'est parfaite. Dans le domaine de l'énergie, la méthode LMDI popularisée par \citet{Ang2004} est de plus en plus utilisé. Le choix d'un indicateur est une discussion technique, mais le meilleur argumentaire me semble être celui de \citet{Muller}. Il réfute quelques arguments souvent utilisés, tout en proposant de nouvelles raisons pour préférer cet indicateur. En particulier, il montre que cet indicateur donne la meilleure décomposition pour toute une famille de fonctions usuelles.
+
+En combinant la méthodologie Input-Output avec le LMDI, je cherche à décomposer le contenu en emploi des différents secteurs économiques. La première étape consistera à déterminer les facteurs qui composent le contenu en emploi, afin d'obtenir une décomposition formellement semblable à l'équation de Kaya.
+La seconde étape sera de calculer l'apport de chaque des facteurs pour expliquer l'écart à la moyenne.
+
+Par cette décomposition, je vise à comprendre les variations du contenu en emploi entre les différents secteurs économiques, notamment pour les secteurs concernés par la transition énergétique.
+Par exemple, pourquoi le contenu en emploi de la rénovation est-il élevé ? Est-ce du fait d'importations faibles, d'une forte part du travail plutôt que du capital, de salaires faibles ? Quelle est la part relative de chacun de ces facteurs ? On peut se poser les mêmes questions pour les énergies renouvelables.
+Selon la réponse à ces questions, les conséquences d'une politique favorisant ces secteurs seront très différentes : dans le premier cas, elles seront de réduire les importations ; dans le second, de favoriser les travailleurs au détriment des détenteurs de capital ; dans le troisième, de baisser les salaires pour créer de l'emploi. 
+Ce travail d'analyse m'apparait donc essentiel pour mieux comprendre les implications économiques de la transition énergétique, secteur par secteur.
 
 
 
+\subsection{Réallocation de la demande finale et création d'emplois: mécanismes économiques et résultats robustes}
 
-\subsection{Emplois verts et réallocation de la demande finale : mécanismes et résultats robustes}
-\subsubsection{Contexte}
-La partie précédente cherchait à mieux cerner la définition du contenu en emploi, et les causes de ses variations. J’ai montré que certaines branches ont un contenu en emploi plus élevé. 
-La partie suivante prolonge cette réflexion sur les emplois verts, avec une réflexion sur l’importance des modèles utilisés dans le résultat. 
+\subsubsection{Une pluralité de résultats aux conclusions variées}
 
-De par l'importance politiques de la thématique de l'emploi, de nombreuses études cherchent à quantifier l'impact sur l'emploi d'une transition énergétique. Les résultats de la littérature sont cependant partagés : certains y voient un effet positif, d’autres un effet négatif.
+Les publications académiques sur le double dividende emploi sont nombreuses, mais les conclusions divergent et les mécanismes économiques sous-jacents sont peu clairs.
+Après une première approche plus théorique, avec notamment l'article fondateur de \citet{Bovenberg1994a}, la littérature s'est essentiellement portée sur l'analyse empirique et numérique des effets d'une taxe environnementale. 
+Cependant, les résultats de ces analyses diffèrent selon les types de taxe et les modèles utilisés. L'impact sur les émissions de CO\textsubscript{2}, le PIB et l'emploi varient fortement. Il est difficile de dégager des conclusions robustes de ces travaux. 
 
-\subsubsection{Question de recherche}
-Cependant, il est difficile de dégager des conclusions robustes de ces travaux. La première raison est la pluralité des scénarios étudiés. Il y a une grande variabilité dans les pays, les années, les technologies étudiés ; dans les hypothèses faites (exportations des technologies par exemple).
-Mais une autre raison est la diversité des modèles utilisés : IO, CGE, économétrique…
+Une explication possible est la pluralité des objets étudiés, des politiques implémentées, et des types de modèles utilisés.
+Pour l'objet d'étude, il y a une grande variabilité dans les pays, les années et les technologies considérées (système électrique seul, transportbs, bâtiment). 
+La politique économique est généralement représentée par une taxe. Mais le point d'application de cette taxe peut varier (taxe sur le carbone, sur le capital, etc), ainsi que son recyclage, c'est-à-dire la façon dont sont utilisés les revenus (baisse des cotisations sociales, redistribution directe aux ménages, etc.).
+Enfin, les modèles utilisés appartiennent à différents familles, avec des représentations différentes des équilibres macroéconomique. Dans ces familles, on peut citer notamment les modèles d'équilibre général (CGE), les modèles Input-Output et les modèles macroéconométriques.
 
-Cette diversité de résultats, de scénarios et de modèles appelle plusieurs questions. Quels sont les résultats robustes d’un modèle à l’autre, et ceux qui divergent ? Et au-delà des résultats, quels sont les mécanismes qui amènent à de la création d’emploi ? L’idée est, au-delà des modèles et des résultats quantitatifs, de pouvoir développer une compréhension des phénomènes économiques à l’œuvre. 
+Est-il possible de dégager au moins des résultats robustes par type de modèle ? 
+Dans une méta-analyse d'études sur la taxe environnementale, \citet{Patuelli2005} montrent que l'emploi augmente souvent - y compris à long terme - mais que l'effet sur le PIB est plus ambigu. Mais ils estiment qu'il n'y a pas de conclusion robuste sur le type de modèle (macroéconométrique ou CGE) et de politique qui permette d'obtenir un double dividende. Les résultats ne tiennent donc pas uniquement au type de modèle, mais aussi à l'implémentation, aux hypothèses plus fines qui peuvent varier entre modèles de la même famille. Par exemple, les sensibilités des modèles aux variations de prix, donnés par les élasticités calibrées de façon exogène, peuvent aboutir à des résultats différents en termes d'exportations, ou de variations des salaires, ce qui peut \textit{in fine} avoir des répercussions importantes sur le résultat final en termes de PIB ou d'emploi.
 
-J’ai concentré mon travail sur la comparaison entre les deux types de modèles les plus utilisés pour les analyses en emploi de la transition énergétique : IO et CGE. Ce choix de comparer IO et CGE permet en outre de développer la réflexion sur le modèle IO utilisé dans la partie précédente.
 
-Par ailleurs, j’ai choisi de me concentrer sur l’analyse d’un type de scénarios bien précis : une réallocation des investissements. L’idée est de regarder si investir dans certains secteurs de la transition énergétique permet de générer des emplois. Cette question me paraît pertinente car elle répond à l’impératif d’investissement dans les énergies renouvelables pour décarboner nos modes de production, tout en intégrant la contrainte budgétaire pour les Etats.
+
+\subsubsection{Comprendre les mécanismes économiques en jeu}
+
+
+%Cette diversité de résultats, de scénarios et de modèles appelle plusieurs questions. Quels sont les résultats robustes d’un modèle à l’autre, et ceux qui divergent ? Et au-delà des résultats, quels sont les mécanismes qui aboutissent à la création d’emploi ? L’idée est, au-delà des modèles et des résultats quantitatifs, de pouvoir développer une compréhension des phénomènes économiques à l’œuvre. 
+
+Mais au-delà des débats sur les résultats quantifiés, peu de discussion portent sur les mécanismes économiques à l'\oe{}uvre. Pourquoi telle politique économique génère de l'emploi, et pas telle autre ? 
+Cette compréhension des mécanismes sous-jacents me parait cruciale. Le modèle doit être un outil d'aide à la compréhension. Il doit permettre de répondre à la question du \textit{combien}, mais aussi et surtout à celle du \textit{pourquoi}.
+Cette discussion est essentielle pour distinguer les résultats robustes des artefacts qui proviennent purement d'un jeu d'hypothèses particulier et contestable.
+Les hypothèses sur les opportunités à l'export, l'impact sur la compétitivité, la réprésentation du marché du travail ou encore les façon dont sont financés les investissements sont souvent peu discutées.
+
+Par ailleurs, la question des investissements est peu relativement abordée dans la littérature. La majorité des travaux macroéconomiques s'intéressent aux impacts d'une taxe. Mais si la fiscalité carbone fait couler beaucoup d'encre (avec notamment l'EU ETS en Europe), on observe également un grand besoin d'investissement dans les infrastructures bas-carbone. 
+Sortir du tout-pétrole dans les transports, isoler les bâtiments, installer des énergies renouvelables : renouveler les infrastuctures nécessite un investissement initial important, et la taxe n'est pas l'unique, ni même nécessairement le meilleur moyen d'y parvenir. Les investissements sont un levier essentiel de la transformation de nos systèmes économiques. D'ailleurs, le programme du nouveau Président de la République, Emmanuel Macron, fait de son plan d'investissement public le «~bras armé~» de la transition énergétique et écologique \citet{Zaouati2017}. 
+
+J'ai donc choisi d'étudier l'impact des investissements sur l'emploi. Plus précisément, j'ai décidé de me concentrer sur un type particulier de scénario : une réallocation des investissements. L'idée est de travailler à budget constant. Cette option peut être intéressante pour un décideur soumis à des contraintes de budget. Elle présente également l'avantage de ne pas entrer dans les discussions délicates sur le financements de ces investissements. Un résultat positif obtenu avec cette méthode sera donc d'autant plus fort : s'il est possible créer plus d'emploi à niveau de dépense égale, cette politique parait une bonne marche suivre.
 
 \subsubsection{Méthodologie : les modèles d'équilibre général calculable}
-Je commence par mettre en évidence trois mécanismes principaux de création d’emplois dans un modèle IO : salaires, part du travail dans la valeur ajoutée et taux d’importations. Ces éléments ont un côté intuitif qui résonne dans le débat public. Mais sont-ils confirmés dans un cadre d’équilibre général ?
-Pour tenter de répondre à cette question, je développe pour chaque mécanisme un modèle simple d’équilibre général, permettant une comparaison avec le modèle IO. 
-Ensuite, je développe et j’utilise un modèle CGE complet, que je compare à un modèle IO. 
-Le modèle utilisé est le plus standard possible : il est présenté dans un manuel de macroéconomie \citep{Hosoe2010}, et publié sur le site officiel de la communauté de modélisateurs GAMS. Ce choix est fait pour que les résultats et les mécanismes observés soient les plus généraux et les plus transparents possibles. En outre, l'utilisation d'un CGE permet d'obtenir une estimation quantitative d’une politique énergétique et climatique. En particulier, j'étudie une politique réduisant l’investissement dans les énergies fossiles et augmentant l’investissement dans les énergies renouvelables. 
+
+Dans cette analyse, je me concentre sur deux types de modèles : les modèles d'équilibre général calculables (CGE) et les modèles Input-Output. Ces deux familles sont en effet parmi les plus utilisées pour les analyses en emploi de la transition énergétique.
+
+Mon objectif est de faire une comparaison pas à pas, d'analyser l'impact de chaque équation ou bloc d'équations. Par exemple, le marché du travail et le commerce sont chacun modélisés par un bloc d'équations.
+L'idée est de pouvoir ainsi déterminer quelles équations sont déterminantes, puis de discuter leur pertinence.
+
+Je commence par mettre en évidence trois déterminants de la création d’emplois dans un modèle IO : le niveau des salaires, la part du travail dans la valeur ajoutée et le taux d’importations. Ces éléments ont un côté intuitif qui fait écho au débat public. Ils permettent en outre de faire le lien avec mon analyse sur le contenu en emploi. Mais sont-ils confirmés dans un cadre d’équilibre général ?
+
+Pour tenter de répondre à cette question, je développe pour chaque mécanisme un modèle simple d’équilibre général à deux secteurs, une maquette permettant la comparaison avec le modèle IO. 
+Ensuite, j’utilise un modèle CGE complet à 58 secteurs. 
+Le modèle choisi est le plus standard possible : il s'inspire très largement d'un modèle présenté dans un manuel de macroéconomie : le \textit{Textbook of Computable General Equilibrium Modeling} \citep{Hosoe2010}. En outre, les équations du modèle sont publiées sur le site officiel de la communauté de modélisateurs GAMS. Ce choix d'un modèle standard est fait pour que les résultats et les mécanismes observés soient les plus généraux et les plus transparents possibles. Le but est d'éviter au maximum l'aspect «~boite noire~» souvent reproché aux modèles macroéconomiques.
+
+Enfin, j'étudie deux politiques de façon quantitative avec le modèle CGE complet : l'installation de panneaux solaires et l'isolation thermique de batiments. La compréhension des résultats chiffrés devra pouvoir s'appuyer sur l'analyse des mécanismes réalisée avec les modèles stylisés.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
