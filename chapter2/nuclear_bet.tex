@@ -26,7 +26,7 @@ The current debates suggest that there is no silver bullet, no single optimum st
 To do so, we combine the cost-minimizing optimization model of the French power sector FLORE with the framework of Robust Decision Making \citep{Lempert2006}, in a way similar to \citet{Nahmmacher2016}. This RDM framework combines scenario-based planning with statistical analysis, in order to identify robust strategies, vulnerabilities and trade-offs. We apply it to the results of nearly 3,000 runs made with the FLORE model. 
 Our paper aims to provide insight for the current debate in France concerning the retrofit of existing nuclear plants. More generally, it also explores the importance of uncertainties related to nuclear energy in power system planning, and could thus contribute to the debates in other European countries, in particular Germany and Switzerland.
 
-In section \ref{sec:plausibleValues}, we examine in detail the ranges of uncertainty. These ranges will be used for the parameters of our model FLORE, which is introduced in \cref{sec:modelDescription}. We present the RDM framework in \cref{sec:method} and apply it in \cref{sec:results} to identify robust strategies. Finally, we compare our results to the French official scenarios in \cref{sec:comparison}. \Cref{sec:conclusion2} outlines the conclusions.
+In section \ref{sec:plausibleValues}, we examine in detail the ranges of uncertainty. These ranges will be used for the parameters of our model FLORE, which is introduced in \ref{sec:modelDescription}. We present the RDM framework in sections \ref{sec:method} and apply it in section \ref{sec:results} to identify robust strategies. Finally, we compare our results to the French official scenarios in section \ref{sec:comparison}. Section \ref{sec:conclusion2} outlines the conclusions.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -113,7 +113,7 @@ This discrepancy has motivated another approach, based on the statistical analys
 
 However, this second approach suffers from two short-comings. The first one is the low number of occurrences. Only two events are classified in the category of major accident, i.e. a level 7 on the INES scale - the INES scale, introduced by the International Nuclear Energy Agency, ranges nuclear events from 1 (anomaly) to 7 (major accident). Such a small sample hinders robust statistical analysis. Most studies thus estimate the probability of a larger pool of events by including events lower on the INES scale, but the gain in estimation accuracy comes at the cost of a change in the meaning of the results \citep{Rangel2014}. What is measured is not only the probability of major accidents occurring, but it also includes the probability of less dramatic events. 
 The second shortcoming comes from the use of past, historical data. This does not enable to account for the potentially increased risks due to aging power plants, nor for the tense political situation with fears of terrorist attacks. 
-This uncertainty can drastically change the cost of insurance. If we estimate the cost of insurance should match the criticality of nuclear, and if we assume the cost of a major nuclear accident to be 100 billion euros, as recommended by \citet{CourdesComptes2012}, then a probability of accident between 10\textsuperscript{-7} and 10\textsuperscript{-6} makes the insurance cost vary from 1.4~\emwh\ to 14.2~\emwh, as shown in \cref{tab:insurance}. 
+This uncertainty can drastically change the cost of insurance. If we estimate the cost of insurance should match the criticality of nuclear, and if we assume the cost of a major nuclear accident to be 100 billion euros, as recommended by \citet{CourdesComptes2012}, then a probability of accident between 10\textsuperscript{-7} and 10\textsuperscript{-6} makes the insurance cost vary from 1.4~\emwh\ to 14.2~\emwh, as shown in table \ref{tab:insurance}. 
 And that range is in line with the requirement from the regulator for a core meltdown.
 
 The point behind these figures is that the cost of insurance cannot be dismissed once and for all. Expectations of security improvements can explain an almost negligible value for nuclear insurance, while a more conservative view can lead to significantly higher estimates, up to 14 \emwh. 
@@ -155,7 +155,7 @@ In conclusion, decommissioning and waste management costs add another layer of u
 
 \subsubsection{Summing up}
 Overall, there are at least eight sources of uncertainty for retrofitted reactors: the overnight capital cost of retrofitting, the cost of borrowing, the future OPEX, the length of lifetime extension (10 or 20 years), the future availability of nuclear plants and the costs of waste, decommissioning and insurance.
-Using the most recent data available, detailed in \cref{tab:historical_costs} and \cref{tab:costs_grand_carenage}, we compute that, in the best case, the cost of retrofitted nuclear would be 44 \emwh. But based on conservative assumptions detailed in \cref{tab:sensitivity_tests} in appendix, various sources of uncertainty could amount to an additional 51.5 \emwh. Plausible values for this technology thus range from 44 \emwh\ to 95.5 \emwh.
+Using the most recent data available, detailed in tables \ref{tab:historical_costs} and \ref{tab:costs_grand_carenage}, we compute that, in the best case, the cost of retrofitted nuclear would be 44 \emwh. But based on conservative assumptions detailed in table \ref{tab:sensitivity_tests} in appendix, various sources of uncertainty could amount to an additional 51.5 \emwh. Plausible values for this technology thus range from 44 \emwh\ to 95.5 \emwh.
 
 
 \begin{figure}[!ht]
@@ -193,7 +193,7 @@ Finally, it is important to note that new nuclear is expected to be costlier tha
 \subsection{Demand, CO2 price and renewable cost}
 \label{subsec:demand}
 
-There is some uncertainty on the demand level. This was highlighted during the National Debate on Energy Transition in France, which led to four contrasted demand scenario: SOB, EFF, DIV and DEC, in order of increasing demand (see \cref{fig:DNTE_scenarios} in appendix). 
+There is some uncertainty on the demand level. This was highlighted during the National Debate on Energy Transition in France, which led to four contrasted demand scenario: SOB, EFF, DIV and DEC, in order of increasing demand (see figure \ref{fig:DNTE_scenarios} in appendix). 
 Our reference scenario is in line with the DIV scenario, as it is closest to current projections by the French transmission line operator, RTE. It is roughly a scenario of flat demand. The most extreme scenarios were SOB, for low demand, and DEC, for high demand. We use these as our low and high case respectively, to account for all plausible values of demand.
 
 For \coo, we use the official price used in French public investments as defined in \cite{Quinet2009}. In the central scenario, this price goes up to \euro 100 in 2030 to \euro 200 in 2050. In the short term, these prices are significantly higher than the price of emission allowances on the EU ETS market (which has stayed below 10 \euro/\coo\ on the EEX market in the past year) and there is no reason to think that the EU ETS price might be higher, even with the proposition of back-loading some allowances in the future \citep{Lecuyer2016}. 
@@ -278,7 +278,7 @@ Variable costs are determined by fuel costs, CO\textsubscript{2} price, plant ef
 
 In \ref{sec:plausibleValues}, we studied the range of plausible values for nuclear, highlighting eight sources of uncertainty. Looking at these specific cost items was necessary to understand the range of plausible costs for retrofitted nuclear, but we will not detail each of these items in our model, as it would lead to too many possibilities (and possibly overlapping ones). Instead, we will keep the OPEX fixed and make the CAPEX vary to cover the uncertainty range. This simplified approach allows a decision maker to use its own assumptions about each cost item, and use the resulting cost in euro per MWh to interpret our results.
 
-All assumptions regarding investment costs (\cref{tab:Investment _costs}), fixed O\&M costs (\cref{tab:OM_costs}), CO\textsubscript{2} price (\cref{tab:CO2_price}), fuel prices (\cref{tab:Fuel_prices}) and net efficiencies (\cref{tab:Efficiencies}) can be found in appendix \ref{app:calibration}.
+All assumptions regarding investment costs (table \ref{tab:Investment _costs}), fixed O\&M costs (table \ref{tab:OM_costs}), CO\textsubscript{2} price (table \ref{tab:CO2_price}), fuel prices (table \ref{tab:Fuel_prices}) and net efficiencies (table \ref{tab:Efficiencies}) can be found in appendix \ref{app:calibration}.
 
 \subsection{Scope and limitations}
 
@@ -362,9 +362,9 @@ The RDM method proceeds in several steps:
 \subsection{Optimal trajectories}
 \label{ssec:optimaltraj}
 First, we study the optimal trajectories of nuclear in a cost-minimization framework, to see if there is an optimum which proves stable to sensitivity analysis, for all plausible values of uncertain parameters. In this part, we let the model choose endogenously which plants should be retrofitted.
-\Cref{fig:nukeShare} provides a view of the optimal share of nuclear, for various costs of retrofitted and new nuclear, and using our reference values of demand, \coo\ price and renewable cost. This figure reveals that there are four main optimum strategies for retrofitting. When retrofitted nuclear is equal or below 60 \emwh, all plants are retrofitted. At 70 \emwh, most plants are retrofitted. At 80 \emwh, around three quarters are retrofitted. At 90 \emwh\ or above, a full and early phase-out occurs. The corresponding power mixes can be found in appendix \ref{app:optimumMixes}.
+Figure \ref{fig:nukeShare} provides a view of the optimal share of nuclear, for various costs of retrofitted and new nuclear, and using our reference values of demand, \coo\ price and renewable cost. This figure reveals that there are four main optimum strategies for retrofitting. When retrofitted nuclear is equal or below 60 \emwh, all plants are retrofitted. At 70 \emwh, most plants are retrofitted. At 80 \emwh, around three quarters are retrofitted. At 90 \emwh\ or above, a full and early phase-out occurs. The corresponding power mixes can be found in appendix \ref{app:optimumMixes}.
 
-A lower demand lowers the optimal share of retrofit by around 10 points, while a higher demand increases the optimal share for production costs of retrofitted nuclear equal to or greater than 70 \emwh. This is shown in the appendix \cref{fig:powerMixSensitivity}, which shows the sensitivity of the optimal nuclear share to the uncertain parameters. 
+A lower demand lowers the optimal share of retrofit by around 10 points, while a higher demand increases the optimal share for production costs of retrofitted nuclear equal to or greater than 70 \emwh. This is shown in the appendix figure \ref{fig:powerMixSensitivity}, which shows the sensitivity of the optimal nuclear share to the uncertain parameters. 
 
 \begin{figure}[!ht]
 	\centering
@@ -373,14 +373,14 @@ A lower demand lowers the optimal share of retrofit by around 10 points, while a
 	\label{fig:nukeShare}
 \end{figure}
 
-From \cref{fig:nukeShare} and the sensitivity analysis on demand in \cref{fig:powerMixSensitivity}, we can conclude that there is not a single optimum in the range of plausible values. On the contrary, the optimal trajectory depends on several uncertain parameters, in particular the production cost of retrofitted nuclear and demand level. Hence, in this case, the framework of cost-minimization and sensitivity analysis does not allow to conclude to a single trajectory. Following our discussion in \cref{sec:method}, this motivates the use of the Robust Decision Making framework developed by \citet{Lempert2006}. We now apply it to find robust strategies, and to highlight the potential trade-offs between various robust strategies.
+From figure \ref{fig:nukeShare} and the sensitivity analysis on demand in figure \ref{fig:powerMixSensitivity}, we can conclude that there is not a single optimum in the range of plausible values. On the contrary, the optimal trajectory depends on several uncertain parameters, in particular the production cost of retrofitted nuclear and demand level. Hence, in this case, the framework of cost-minimization and sensitivity analysis does not allow to conclude to a single trajectory. Following our discussion in section \ref{sec:method}, this motivates the use of the Robust Decision Making framework developed by \citet{Lempert2006}. We now apply it to find robust strategies, and to highlight the potential trade-offs between various robust strategies.
 
 \subsection{Determine plausible future states}
 
-This first step derives from the litterature review in \cref{sec:plausibleValues}. 
+This first step derives from the litterature review in section \ref{sec:plausibleValues}. 
 For retrofitted nuclear, we consider that plausible costs range from 40 \emwh\ to 90 \emwh, by step of 10 \emwh. Again, the idea is to encompass a broad initial range in order not to miss any possible value, and the RDM analysis will later identify subsets of costs to draw conclusions. 
 As to new nuclear costs, we consider a range from 70 \emwh\ to 110 \emwh, by steps of 20 \emwh. Existing data suggests the cost could be even higher, but since nuclear is not competitive at 110\emwh\ or above in our model, we stop the analysis at this value as it would not add any new information.
-For demand, we consider three trajectories drawn from the national debate on energy transition (DNTE): a low, a medium and a high trajectory. They corresponding respectively to the SOB, DIV and DEC scenario, as shown in \cref{fig:DNTE_scenarios}.
+For demand, we consider three trajectories drawn from the national debate on energy transition (DNTE): a low, a medium and a high trajectory. They corresponding respectively to the SOB, DIV and DEC scenario, as shown in figure \ref{fig:DNTE_scenarios}.
 Finally, we examine two \coo\ price trajectories: a high trajectory using the official price trajectory from \citet{Quinet2009}, and a low trajectory in which this price is divided by two.
 Multiplied by the 27 strategies presented in the next section, these parameter ranges require to run the model 2,916 times. 
 
@@ -407,9 +407,9 @@ In the future, as new information becomes available regarding costs, demand, \co
 
 The following step is to choose a candidate strategy $s_{candidate}$ that performs well across all futures. Our indicator of performance is the upper-quartile regret. This upper-quartile regret is also the indicator used by \citet{Lempert2006} and \citet{Nahmmacher2016} to pick a candidate strategy. The idea of this indicator is to select a strategy that is not too far from the optimum in 75\% of the cases, i.e. that performs well in most cases -- and we will explore remaining 25\% later by analyzing the vulnerabilities of our candidate strategy. 
 
-Using the costs resulting from our model runs, we compute for each strategy $s \in \mathbb{S}$ its regret in each future state $f \in \mathbb{F}$. Then we compute the upper-quartile regret for each strategy $s$. The results are shown in \cref{fig:regret}. Each dot in the figure shows the regret, in percent, for a strategy $s$ indicated on the x-axis, and a future $f$. The upper-quartile regret is represented by the larger dots. This figure shows that strategy S9 is a good candidate strategy, as it has the lowest upper-quartile regret (3.9\%). S9 is a strategy in which no plant is retrofitted up to 2021 -- which represents an early phase-out for 14 reactors -- but then all other plants are retrofitted.
+Using the costs resulting from our model runs, we compute for each strategy $s \in \mathbb{S}$ its regret in each future state $f \in \mathbb{F}$. Then we compute the upper-quartile regret for each strategy $s$. The results are shown in figure \ref{fig:regret}. Each dot in the figure shows the regret, in percent, for a strategy $s$ indicated on the x-axis, and a future $f$. The upper-quartile regret is represented by the larger dots. This figure shows that strategy S9 is a good candidate strategy, as it has the lowest upper-quartile regret (3.9\%). S9 is a strategy in which no plant is retrofitted up to 2021 -- which represents an early phase-out for 14 reactors -- but then all other plants are retrofitted.
 
-But \cref{fig:regret} also shows that the strategies S18 and S24 are not far from S9 in terms of regret. Their upper-quartile regret is 4.5\% and 4.2\% respectively. 
+But figure \ref{fig:regret} also shows that the strategies S18 and S24 are not far from S9 in terms of regret. Their upper-quartile regret is 4.5\% and 4.2\% respectively. 
 S24 is a strategy in which all reactors are retrofitted in the first and third period, but only half of them in the second period. S18 is a strategy in which half the reactors are retrofitted in the first period, and then all of them are retrofitted.
 In his paper, \citet{Lempert2006} go on with the RDM analysis considering just one candidate strategy, stating that the final results are not sensitive to the choice of the initial candidate strategy. However, given how close S9, S18 and S24 are in terms of upper-quartile regret, we will perform the rest of the analysis using these three strategies as candidates, in order to make sure our results are not sensitive to the choice of the candidate strategy (S9 is our main candidate strategy, for which will display the figures in the paper, but similar figures for S18 and S24 will be available in the appendix).
 
@@ -424,7 +424,7 @@ In his paper, \citet{Lempert2006} go on with the RDM analysis considering just o
 
 To identify the vulnerabilities of the candidate strategies, we use the Patient Rule Induction Method (PRIM), originally developed by \citet{Friedman1999}. This PRIM algorithm helps identify subsets of parameters in which our target indicator (regret) is above a defined threshold. Documentation on PRIM's operation can be found in \citet{Bryant2010}. We use a public version of the PRIM algorithm implemented in Python in the package called "prim" \citep{Hadka}. 
 
-A regret threshold must be defined to use this PRIM analysis. The ordered distribution of regret shows that regret increases strongly above the threshold 5\% for each candidate strategy S9, S18 and S24 (cf. \cref{fig:quantile_regret}). This value of 5\% corresponds to the 80th centile for S18 and S24, and to the 83th centile for S9, which is close to the upper-quartile regret threshold used by \citet{Nahmmacher2016}. Thus, we choose this value of 5\% as a threshold. 
+A regret threshold must be defined to use this PRIM analysis. The ordered distribution of regret shows that regret increases strongly above the threshold 5\% for each candidate strategy S9, S18 and S24 (cf. figure \ref{fig:quantile_regret}). This value of 5\% corresponds to the 80th centile for S18 and S24, and to the 83th centile for S9, which is close to the upper-quartile regret threshold used by \citet{Nahmmacher2016}. Thus, we choose this value of 5\% as a threshold. 
 
 The PRIM algorithm that, for strategy S9, the most common pattern associated with a regret above 5\% is when retrofit costs is equal to or greater than 80 \emwh in conjunction with a low demand level. These two conditions provide a cluster of states of future $\mathbb{F}_{vuln}(S9)$ to which S9 is vulnerable. Since the states of future in the PRIM-generated clusters do not play in favour of nuclear competitiveness, so we call them "retrofit adverse" states. By opposition, we will call "retrofit friendly" states the remaining states in $\mathbb{F}_{rob}(S9) = \mathbb{F} - \mathbb{F}_{vuln}(S9)$.  
 
@@ -433,7 +433,7 @@ Applying PRIM to strategies S24 and S18 shows that the most common pattern assoc
 
 \subsection{Characterize trade-offs among strategies}
 
-Identifying vulnerabilities enables us to characterize trade-offs between different strategies. \Cref{fig:low_regret_frontier_S9} compares the upper-quartile regret values for each of the 27 strategies over the two subsets of future states yielded by the PRIM analysis of S9: $\mathbb{F}_{vuln}(S9)$ and $\mathbb{F}_{rob}(S9)$. (The figure with the clusters from S18 and S24 is similar and shown in \cref{fig_app:low_regret_frontier} in appendix).
+Identifying vulnerabilities enables us to characterize trade-offs between different strategies. Figure \ref{fig:low_regret_frontier_S9} compares the upper-quartile regret values for each of the 27 strategies over the two subsets of future states yielded by the PRIM analysis of S9: $\mathbb{F}_{vuln}(S9)$ and $\mathbb{F}_{rob}(S9)$. (The figure with the clusters from S18 and S24 is similar and shown in figure \ref{fig_app:low_regret_frontier} in appendix).
 By switching from one strategy to another, it is possible to lower the regret in one cluster of states, but at the expense of increasing the regret in the other cluster of states. For example, switching from S1 to S10 reduces the regret in "retrofit friendly" states, but increases the regret in "retrofit adverse" states. 
 A decision maker can use this figure to choose a strategy that offers the trade-off he prefers. 
 
@@ -444,7 +444,7 @@ They are all located on what can be called a low-regret frontier.
 Some other interesting strategies (though not on the low-regret frontier) are shown in light grey. 
 S27 is important as it is the strategy of full retrofit, a policy option often prompted in the public debate. 
 It appears that this strategy is far from the low-regret frontier. 
-This is due to its vulnerability to a low demand (see \cref{fig_app:vulnerabilities_S27} in the appendix). In other words, retrofitting all existing nuclear plants might lead to a costly overcapacity.
+This is due to its vulnerability to a low demand (see figure \ref{fig_app:vulnerabilities_S27} in the appendix). In other words, retrofitting all existing nuclear plants might lead to a costly overcapacity.
 
 Evidencing this low-regret frontier is an important result, because it enables to select only five strategies as potential robust candidates out of the 27 initial strategies examined. This narrowed choice provides a simpler picture of our initial problem, showing only the strategies with interesting trade-offs.
 
@@ -459,7 +459,7 @@ Having identified the strategies located on the low-regret frontier, the choice 
 This is particularly true for nuclear, which is a controversial source of power, and for which a vast array of costs is plausible. 
 If the decision-maker thinks the retrofit friendly cluster is not likely, he will choose to go for S1, the full phase-out strategy; if, on the contrary, he believes the odds of a retrofit friendly state are high, he will pick S18. 
 
-We can simplify the low-regret frontier representation to highlight the most interesting trade-offs between strategy. To that end, we compute the expected regret of a strategy, depending on the relative odds of the two clusters. This is done in \cref{fig:odds_S9} for the clusters from strategy S9. This figure shows that there are four main options which can claim to be optimal, depending on the implicit probabilities of the decision maker. 
+We can simplify the low-regret frontier representation to highlight the most interesting trade-offs between strategy. To that end, we compute the expected regret of a strategy, depending on the relative odds of the two clusters. This is done in figure \ref{fig:odds_S9} for the clusters from strategy S9. This figure shows that there are four main options which can claim to be optimal, depending on the implicit probabilities of the decision maker. 
 The x-axis shows the odds of the "retrofit adverse" states versus the odds of the "retrofit friendly" states. 
 The y-axis shows the regret associated with each strategy and implicit odds. 
 The target of a decision-maker is to pick a strategy with the lowest regret. 
@@ -467,7 +467,7 @@ If he believes that a retrofit friendly state is unlikely (odds below 1:1), he s
 On the contrary, if he believes that a retrofit friendly" state is certain, he should pick strategy S18.
 If he believes that a retrofit friendly state is more likely but not certain, he should pick strategy S9.
 Finally, there is a case in which strategy S12 would be picked: if the decision maker thinks the odds are very close to 1:1.
-If we use the PRIM-generated clusters based on strategy S18 and S24, the results are similar, except that strategy S12 is replaced with strategy S6. This is shown in \cref{fig_app:odds} in the appendix.
+If we use the PRIM-generated clusters based on strategy S18 and S24, the results are similar, except that strategy S12 is replaced with strategy S6. This is shown in figure \ref{fig_app:odds} in the appendix.
 
 
 \begin{figure}[!ht]
@@ -477,13 +477,13 @@ If we use the PRIM-generated clusters based on strategy S18 and S24, the results
 	\label{fig:odds_S9}
 \end{figure}
 
-The results shown in \cref{fig:odds_S9} do not try to settle the debate on nuclear. On the contrary, they show that various strategies can be considered as optimal from a cost-minimization perspective. This helps understand the coexistence of various opinions. But they also provide a quantified framework which accounts for uncertainty to support policy decision. 
+The results shown in figure \ref{fig:odds_S9} do not try to settle the debate on nuclear. On the contrary, they show that various strategies can be considered as optimal from a cost-minimization perspective. This helps understand the coexistence of various opinions. But they also provide a quantified framework which accounts for uncertainty to support policy decision. 
 
 Currently, the cost of retrofitted nuclear is estimated at around 40 \emwh\ by EDF. Although there is a lot of uncertainty about that figure, a cost of retrofitted nuclear below 80 \emwh\ seems more likely today. Thus, strategies S9 and S18 seem to be the best robust strategies given current cost estimates, in the sense that they yield the lowest expected regret over a large range of the most plausible future states.
 
 S9 and S18 are close strategies: they are both based on a full retrofit after 2021. The difference is that S18 include to retrofit 50\% of the 14 oldest plants, while S9 plans to retrofit none. 
 Both strategies yield the lowest regret in the most likely future states, as shown in \ref{fig:low_regret_frontier_S9}, providing a good hedge against higher than expected cost of nuclear, low demand of low carbon price. 
-Choosing between S9 and S18 will be a matter of implicit probability of the decision maker. S18 is slightly more performing if nuclear is below 60 \emwh and demand is flat or increasing. But S9 performs better if demand is low, and it is less vulnerable to an increase in retrofit costs in conjunction with a low \coo\ price (cf. \cref{fig_app:vulnerabilities_S9_S18_S27} in appendix).
+Choosing between S9 and S18 will be a matter of implicit probability of the decision maker. S18 is slightly more performing if nuclear is below 60 \emwh and demand is flat or increasing. But S9 performs better if demand is low, and it is less vulnerable to an increase in retrofit costs in conjunction with a low \coo\ price (cf. figure \ref{fig_app:vulnerabilities_S9_S18_S27} in appendix).
 
 In conclusion, we have evidenced that the most robust strategies imply an early-phase out of 7 to 14 out of the 14 oldest reactors, given the current estimates of cost, demand and \coo\ price. The intuition behind these results comes from a balance between risks and costs. On one hand, retrofitting all plants is a strategy vulnerable to lower demand or higher than expected costs of retrofit. On the other hand, nuclear provides a low-carbon, flexible source of electricity. Higher share of renewables entails a drop in the value of their production, due to autocorrelation and increasing flexibility burden for the system. This reduces their competitiveness as their penetration rate increases. Our analysis has revealed two robust strategies in-between these two extremes, which imply closing 7 to 14 reactors. 
 We also highlighted their vulnerabilities, their alternatives, and the potential trade-offs with other strategies. Our approach keeps the debate open, as we highlight that other strategies might be considered cost-optimal for assumptions less in line with the literature, but still plausible given the current uncertainty. 
@@ -503,8 +503,8 @@ From 2012 to 2015, France engaged in a National Debate on the Energy Transition 
 A discussion on the future of the energy mix brought together various political stakeholders, as well as unions and NGOs.
 During the debate, the power mix and the share of nuclear were a point of particular focus, with a dedicated working group. Eleven energy transition scenarios were created by the different parties to promote their own vision of France's energy landscape, and these scenarios were ultimately grouped into four representative scenarios.
 
-These four scenarios represent the different views that existed in 2012, and they have been structuring the French debate on nuclear ever since. The rationale of each representative scenario is summarized in \cref{tab:dnteScenarios}, but more information can be found in \citet{DNTE_gt2}.
-Quantitatively, each scenario can be defined by two criteria: demand level and nuclear share, as detailed in \cref{fig:DNTE_scenarios}.
+These four scenarios represent the different views that existed in 2012, and they have been structuring the French debate on nuclear ever since. The rationale of each representative scenario is summarized in table \ref{tab:dnteScenarios}, but more information can be found in \citet{DNTE_gt2}.
+Quantitatively, each scenario can be defined by two criteria: demand level and nuclear share, as detailed in figure \ref{fig:DNTE_scenarios}.
 
 \begin{table}
 	%\colorTable
@@ -531,7 +531,7 @@ $$D(\text{strategy, DNTE scenario}) = \sqrt{ \sum_{\text{y in {2020,2030,2040}}}
 where $Prod^y$ is the production in year $y$.
 With this methodology, the best matches for the EFF and DIV scenarios are S13 and S6 respectively. In addition, this distance-based methodology gives respectively S1 and S27 as best estimates for the SOB and DEC scenarios, as expected.
 
-Now that we have identified which strategy matches each scenario of the DNTE, we can build on our previous analysis. \Cref{fig:low_regret_frontier_S9} shows that the four DNTE scenarios (S1, S13, S6, S27) cover well the spectrum of possible trade-offs: S1 and S27 are the two extreme points of full phase-out and full retrofit respectively. S13 and S6 provide more balanced intermediate points, with a retrofit share of 27\% and 63\% respectively. Thus, the DNTE scenarios offers a representative panel of the policy options available in terms of capacity decommissioned.
+Now that we have identified which strategy matches each scenario of the DNTE, we can build on our previous analysis. Figure \ref{fig:low_regret_frontier_S9} shows that the four DNTE scenarios (S1, S13, S6, S27) cover well the spectrum of possible trade-offs: S1 and S27 are the two extreme points of full phase-out and full retrofit respectively. S13 and S6 provide more balanced intermediate points, with a retrofit share of 27\% and 63\% respectively. Thus, the DNTE scenarios offers a representative panel of the policy options available in terms of capacity decommissioned.
 
 However, our RDM analysis has also revealed the shortcomings of the DNTE scenarios and the contribution of our RDM analysis. 
 First, we showed that the full-retrofit option, DEC (S27), is not a low-regret option. This is due to its high vulnerability to a decreasing demand. This is an important result because the full retrofit is often presented as the cheapest policy option in the public debate.
