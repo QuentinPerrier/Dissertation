@@ -21,44 +21,48 @@
 
 \input{commands.tex} %commandes personnelles
 
+\setcounter{tocdepth}{3}
+
 \begin{document}
 
  %the front matter
 \frontmatter
 \input{frontmatter/coverpage}
 \selectlanguage{english}
-\maketitle %commande définie dans cired-thesis.cls. Inclut le logo et la date de soutenance
+%\maketitle %commande définie dans cired-thesis.cls. Inclut le logo et la date de soutenance
 
-\copyrightpage %commande définie dans cired-thesis.cls
-%\dedicationpage
-%\acknowledgments
-
-\selectlanguage{french}
-\frenchabstractpage
-
-\selectlanguage{english}
-\abstractpage
-
-\selectlanguage{french}
-\motscles
-
-\selectlanguage{english}
-\keywords
+%\copyrightpage %commande définie dans cired-thesis.cls
+%%\dedicationpage
+%%\acknowledgments
+%
+%\selectlanguage{french}
+%\frenchabstractpage
+%
+%\selectlanguage{english}
+%\abstractpage
+%
+%\selectlanguage{french}
+%\motscles
+%
+%\selectlanguage{english}
+%\keywords
 \tableofcontents
-\authorlist
-\listoffigures
-\listoftables
-\acronyms
+%\authorlist
+%\listoffigures
+%\listoftables
+%\acronyms
+
+
+
 
 \onehalfspacing
 
 \mainmatter %Commence la numérotation des pages et des sections
 
-% include each chapter...
+ %%include each chapter here...
 \newrefsection
 \selectlanguage{french}
 \include{chapter1/introduction}
-%\printbibliography[heading=subbibintoc,type=article,title={Articles only}]
 \phantomsection
 \printbibliography[heading=subbibintoc]
 
@@ -96,7 +100,7 @@
 \phantomsection
 \printbibliography[heading=subbibintoc]
 
-%\singlespacing 
+\singlespacing 
 
 
 \selectlanguage{english}

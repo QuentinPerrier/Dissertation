@@ -336,7 +336,7 @@ BoldItalicFont=Arno Pro Bold Italic]{Arno Pro}
 
 \RequirePackage{adjustbox} %for sizing tables
 
-\RequirePackage{cleveref} % write "section" automatically
+%\RequirePackage{cleveref} % write "section" automatically
 
 %\RequirePackage{colortbl} %allow to colour tables
 %\newcommand\colorTable{\rowcolors{1}{white}{blue!20}}

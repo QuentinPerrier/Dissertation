@@ -230,7 +230,9 @@ The next section introduces the model we use for our analysis.
 
 The French power model FLORE (\textit{French Linear Optimization for Renewable Expansion}) is an optimization model of investment and dispatch. It is based on representative technologies, with a particular focus on nuclear and hydropower modelling to reflect the specificities of the French power mix. All technologies are endogenous for both investment and dispatch, except for hydro capacities. Existing nuclear plants may be retrofitted for 20 years when they reach 40 years old, or they are decommissioned. Hydro resources from dams and pumping stations are dispatched optimally. In addition, all capacities are jointly optimized over the horizon, in order to provide a consistent trajectory of investments. France is represented as a single node. Hourly demand, net exports and \coo\ prices are exogenous. 
 
-All the equations of the model are available at \url{http://www2.centre-cired.fr/Rubrique-de-services/flore/description}. In addition, an interactive online version of the model can be found at \url{https://qperrier.github.io/#app}. This open access should ensure transparency and reproducibility, as advocated by \citet{Pfenninger2017}.
+All the equations of the model are available for download at my professional webpage: \url{http://www2.centre-cired.fr/PERRIER-Quentin}. 
+In addition, an interactive online version of the model can be found at \url{https://flore.shinyapps.io/model/}. 
+This open access to all equations and data should ensure transparency and reproducibility, as advocated by \citet{Pfenninger2017}.
 
 \subsection{Generation technologies}
 
@@ -276,7 +278,7 @@ Costs include investment costs, fixed O\&M costs, variable costs and costs due t
 To account for financing cost (e.g. the cost of borrowing), investment costs are annualized with a 5\% interest rate, as in \citet{Jagemann2013}.
 Variable costs are determined by fuel costs, CO\textsubscript{2} price, plant efficiency and total generation.
 
-In \ref{sec:plausibleValues}, we studied the range of plausible values for nuclear, highlighting eight sources of uncertainty. Looking at these specific cost items was necessary to understand the range of plausible costs for retrofitted nuclear, but we will not detail each of these items in our model, as it would lead to too many possibilities (and possibly overlapping ones). Instead, we will keep the OPEX fixed and make the CAPEX vary to cover the uncertainty range. This simplified approach allows a decision maker to use its own assumptions about each cost item, and use the resulting cost in euro per MWh to interpret our results.
+In section \ref{sec:plausibleValues}, we studied the range of plausible values for nuclear, highlighting eight sources of uncertainty. Looking at these specific cost items was necessary to understand the range of plausible costs for retrofitted nuclear, but we will not detail each of these items in our model, as it would lead to too many possibilities (and possibly overlapping ones). Instead, we will keep the OPEX fixed and make the CAPEX vary to cover the uncertainty range. This simplified approach allows a decision maker to use its own assumptions about each cost item, and use the resulting cost in euro per MWh to interpret our results.
 
 All assumptions regarding investment costs (table \ref{tab:Investment _costs}), fixed O\&M costs (table \ref{tab:OM_costs}), CO\textsubscript{2} price (table \ref{tab:CO2_price}), fuel prices (table \ref{tab:Fuel_prices}) and net efficiencies (table \ref{tab:Efficiencies}) can be found in appendix \ref{app:calibration}.
 
