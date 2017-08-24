@@ -335,8 +335,8 @@ At the 64-sector level of disaggregation, we encounter some issues to calibrate 
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[height=10cm]{figures/overview_full.pdf}
-	\caption{Overview of the full-fledged model for the S2 sector}
+	\includegraphics[width=14cm]{figures/overview_full.pdf}
+	\caption{Overview of the fully-fledged model for the S2 sector}
 	\label{fig:overview_full}
 \end{figure}
 
@@ -456,13 +456,13 @@ At the 64-sector level of disaggregation, we encounter some issues to calibrate 
 		eq13 & Tax on production & $T^z_j = \tau^z_j \cdot p^z_j \cdot Z_j$ \\
 		eq14 & Tax on household consumption & $T^p = \tau^p \cdot \sum_j  p^q_j \cdot C_j $ \\
 		eq15 & Tax on investment & $T^v = \tau^v \cdot \sum_j p^q_j\cdot I_j $ \\
-		eq16 & Government consumption & $G_i = \mu_i \cdot ( T^d + \sum_j T^z_j + T^p + T^v - S^g ) / p^q_i$ \\
+		eq16 & Government consumption & $G_i = \mu_i ~ ( T^d + \sum_j T^z_j + T^p + T^v - S^g ) / p^q_i$ \\
 		\midrule
 		eq17 & Private savings & $S^p = \sum_i (1+\tau^v) \cdot p^q_i \cdot I_i - S^g - \epsilon \cdot S^f$ \\
 		eq18 & Government savings & $S^g = ssg \cdot  (T^d + \sum_j T^z_j + T^p + T^v)$ \\
 		\midrule
 		eq19 & Household income &  $Inc = p^k \cdot KK + \sum_s p^n_s \cdot NN_s $ \\
-		eq20 & Houshold consumption & $C_i = \alpha_i \cdot  (Inc -S^p - T^d) / ((1+\tau^p) \cdot p^q_i) $ \\
+		eq20 & Houshold consumption & $C_i = \alpha_i \cdot  (Inc -S^p - T^d) / ((1+\tau^p) ~ p^q_i) $ \\
 		\midrule
 		eq21 & Export demand & $p^e_i = \epsilon \cdot pWe_i$ \\
 		eq22 & Import supply & $p^m_i =\epsilon \cdot p^{Wm}_i$ \\
@@ -473,8 +473,8 @@ At the 64-sector level of disaggregation, we encounter some issues to calibrate 
 		eq26 & Imports demand & $M_i = \left( scQ_i^{\rho_Q} \cdot \alpha_i^m \cdot \frac{p_i^q}{p_i^m} \right)^{\sigma_Q} Q_i$ \\
 		eq27& Domestic demand & $D_i = \left( scQ_i^{\rho_Q} \cdot \alpha_i^d \cdot \frac{p_i^q}{p_i^d} \right)^{\sigma_Q} Q_i$ \\
 		eq28 & CET function & $Z_i  = \theta_i \cdot  (\xi^e_i \cdot E_i^{\phi_i} + \xi^d_i \cdot D_i^{\phi_i} )^{(1/\phi_i)} $  \\
-		eq29 & Demand of E & $  E_i = (\theta_i^{\phi_i} \cdot \xi^e_i\cdot (1+\tau^z_i) \cdot p^z_i/p^e_i)^{(1/(1-\phi_i))} \cdot Z_i $ \\
-		eq30 & Demand of D & $ D_i = (\theta_i^{\phi_i} \cdot \xi^d_i \cdot (1+\tau^z_i) \cdot p^z_i/p^d_i)^{(1/(1-\phi_i))} \cdot Z_i $ \\
+		eq29 & Demand of E & $  E_i = (\theta_i^{\phi_i} \cdot \xi^e_i\cdot (1+\tau^z_i) ~ p^z_i/p^e_i)^{(1/(1-\phi_i))} ~Z_i $ \\
+		eq30 & Demand of D & $ D_i = (\theta_i^{\phi_i} \cdot \xi^d_i \cdot (1+\tau^z_i) ~ p^z_i/p^d_i)^{(1/(1-\phi_i))} ~ Z_i $ \\
 		\midrule
 		eq31 &  Balance of domestic good & $Q_i = C_i + I_i$ &  \\
 		eq32 & Balance of labor & $NN_s = \sum_j N_{s,j}$ &   \\
@@ -492,22 +492,23 @@ At the 64-sector level of disaggregation, we encounter some issues to calibrate 
 
 \begin{table}[!h]
 	\centering
-	\caption{Error of Cobb-Douglas function vs empirical estimates}
+	\caption{Comparing job creation using CES vs Cobb-Douglas \\\hspace{\textwidth} (for a wage curve elasticity $\gamma$=0.1, $\sigma_{Armington}$ =2  and $\psi_{CET}$=2)}
 	\label{tab:CobbDouglasError}
-	\begin{tabular}{lp{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}p{2cm}}
+	\begin{tabular}{lcccc}
 		\toprule
-		Techno & gamma & sigma KL & Sigma Armington & Psi CET & CES Value & Cobb-Douglas Value & Error: Cobb-Douglas vs CES (\%)\\
+		Techno & Elasticité  &  Value & Value & Error (\%) \\
+	    & $\sigma_{KL}$ &  with CES & with Cobb-Douglas& Cobb-Douglas vs CES \\
 		\midrule 
-		Solar & 0.1 & 0.2 & 2 & 2 & 5858 & 3542 & -40 \\
-Solar & 0.1 & 0.3 & 2 & 2 & 5394 & 3542 & -34 \\
-Solar & 0.1 & 0.4 & 2 & 2 & 5003 & 3542 & -29 \\
-Solar & 0.1 & 0.5 & 2 & 2 & 4670 & 3542 & -24 \\
-Solar & 0.1 & 0.6 & 2 & 2 & 4382 & 3542 & -19 \\
-Weatherization & 0.1 & 0.2 & 2 & 2 & 6589 & 4135 & -37 \\
-Weatherization & 0.1 & 0.3 & 2 & 2 & 6097 & 4135 & -32 \\
-Weatherization & 0.1 & 0.4 & 2 & 2 & 5683 & 4135 & -27 \\
-Weatherization & 0.1 & 0.5 & 2 & 2 & 5331 & 4135 & -22 \\
-Weatherization & 0.1 & 0.6 & 2 & 2 & 5026 & 4135 & -18 \\
+		Solar & 0.2 &  5858 & 3542 & -40 \\
+Solar & 0.3 &5394 & 3542 & -34 \\
+Solar & 0.4 & 5003 & 3542 & -29 \\
+Solar & 0.5 & 4670 & 3542 & -24 \\
+Solar & 0.6 & 4382 & 3542 & -19 \\
+Weatherization & 0.2 & 6589 & 4135 & -37 \\
+Weatherization & 0.3 & 6097 & 4135 & -32 \\
+Weatherization & 0.4 & 5683 & 4135 & -27 \\
+Weatherization & 0.5 & 5331 & 4135 & -22 \\
+Weatherization & 0.6 & 5026 & 4135 & -18 \\
 		\bottomrule
 	\end{tabular}
 \end{table}

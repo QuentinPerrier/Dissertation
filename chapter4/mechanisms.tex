@@ -326,14 +326,15 @@ Fixing investment exogenously allows to easily represent sectoral reallocation o
 
 \begin{table}[!h]
 	\centering
+	\small
 	\caption{Comparative equations of IO and CGE models.}
 	\label{tab:closedModel}
 	\begin{tabular}{llll}
 		\toprule
 		Num & Description & Standard CGE 1 & IO model \\
 		\midrule
-		eq1 & Production function& $Z_j=scZ_j \cdot (\sum_h \delta_{h,j} \cdot F_{h,j} ^{\rho^z})^{1/\rho^z}$ &  $Z_j = \min_h(\frac{F_{h,j})}{a_{h,j}})$\\
-		eq2 & Factor demand (capital and labour) & $F_{h,j} = ( scZ_j^{\rho^z} \cdot \delta_{h,j} \cdot p^z_j / p^f_h )^{\sigma^z} \cdot Z_j$ & $F_{h,j} = a_{h,j} \cdot Z_j$ \\
+		eq1 & Production function& $Z_j=scZ_j \cdot (\sum_h \delta_{h,j}~ F_{h,j} ^{\rho^z})^{1/\rho^z}$ &  $Z_j = \min_h(\frac{F_{h,j})}{a_{h,j}})$\\
+		eq2 & Factor demand (K and L) & $F_{h,j} = ( scZ_j^{\rho^z} \delta_{h,j} ~ p^z_j / p^f_h )^{\sigma^z} Z_j$ & $F_{h,j} = a_{h,j} \cdot Z_j$ \\
 		eq3 & Household income & $Inc = \sum_h p^f_h \cdot FF_h$ &  \\
 		eq4 & Household demand 	& $C_i = \frac{\alpha_i}{p^c_i} \left(Inc  - S^p\right)$ & $C_i = \overline{C_i}$ \\
 		eq5 & Unemployment & $ U =  1 - FF_{LAB}/Pop$ & $p^f_{Lab} = 1$ \\
@@ -354,6 +355,8 @@ Fixing investment exogenously allows to easily represent sectoral reallocation o
 		
 		The respective factor demand functions are $F_{h,j}  = a^z_{h,j} \cdot Z_j$ and $F_{h,j}  = \beta_{h,j} \cdot p^z_j \cdot Z_j / p^f_h$.}
 \end{table}
+
+
 
 Given these differences between CGE and IO, how far are the results from input-output and from our CGE with standard parameter values? 
 We apply our model to a simple two-sector, two-good economy, represented by the social accounting matrix (SAM) given in table \ref{tab:SAM_2x2}. 
@@ -554,6 +557,7 @@ Compared to the closed version, this new table highlights that there are three a
 
 \begin{table}[!h]
 	\centering
+	\small
 	\caption{Comparative equations of IO and CGE models. Identical equations are not repeated to facilitate reading. The main differences with the closed version shown in table \ref{tab:closedModel} have their equations labelled in bold.}
 	\label{tab:openModel}
 	\begin{tabular}{llll}
@@ -561,9 +565,9 @@ Compared to the closed version, this new table highlights that there are three a
 		Num & Description & Standard CGE 2 & IO model \\
 		\midrule
 		eq1 & Production function & $Z_j=scZ_j \cdot (\sum_h \delta_{h,j} F_{h,j} ^{\rho^z})^{1/\rho^z}$  &  $Z_j = min_h(\frac{F_{h,j})}{a_{h,j}})$\\
-		eq2 & Factor demand & $F_{h,j} = ( scZ_j^{\rho^z} \cdot \delta_{h,j} \cdot p^z_j / p^f_h )^{\sigma^z} \cdot Z_j$ & $F_{h,j} = a_{h,j} Z_j$ \\
+		eq2 & Factor demand & $F_{h,j} = ( scZ_j^{\rho^z} \cdot \delta_{h,j} \cdot p^z_j / p^f_h )^{\sigma^z} ~ Z_j$ & $F_{h,j} = a_{h,j} Z_j$ \\
 		eq3 & Household income & $Inc = \sum_h p^f_h \cdot FF_h$ & $idem$ \\
-		eq4 & Household demand of goods  & $C_i = \frac{\alpha^U}{p^x_i} \left( Inc - S^p\right)$ & $C_i = \overline{C_i}$ \\
+		eq4 & Household demand & $C_i = \frac{\alpha^U}{p^x_i} \left( Inc - S^p\right)$ & $C_i = \overline{C_i}$ \\
 		eq5 & Unemployment & $ U =  1 - FF_{LAB}/Pop$ & $p^f_{Lab} = 1$ \\
 		eq6 & Labor supply & $\log(\frac{p^f_{LAB}}{pc}) = - \gamma \log(U/U^0) $ & $p_{Lab} = 1$ \\
 		eq7 & Capital supply & $FF_{CAP} = \overline{FF_{CAP}} $ & $p^f_{CAP} = 1$ \\
@@ -577,9 +581,10 @@ Compared to the closed version, this new table highlights that there are three a
 		\textbf{eq15} & \textbf{Export demand} & $p^e_i=\epsilon \cdot \overline{p^{We}_i}$ &  $E_i = \overline{E_i}$ \\
 		eq16 & Import supply & $p^m_i=\epsilon \cdot \overline{p^{Wm}_i}$ & $idem$ \\
 		eq17 & Trade balance & $\sum_i \overline{p^{We}_i} E_i + S^f = \sum_i \overline{p^{Wm}_i} M_i$ & $idem$ \\
-		\textbf{eq18} & \textbf{Armington function} & $Q_i = scQ_i (\alpha^m_i M_i^{\rho_Q} + \alpha^d_i D_i^{\rho_Q}  )^{1/\rho_Q} $ &  $p_i^Q Q_i + p_i^e E_i = p^m_i M_i + p^d_i D_i$ \\
-		\textbf{eq19} & \textbf{Imports demand} & $M_i = \left( scQ_i^{\rho_Q} \cdot \alpha_i^m \cdot \frac{p_i^Q}{p_i^m} \right)^{\sigma_Q} Q_i$ & $M_i=\lambda^m_i \cdot (Q_i+E_i)$\\
-		\textbf{eq20}  & \textbf{Domestic demand} & $D_i = \left( scQ_i^{\rho_Q} \cdot \alpha_i^d \cdot \frac{p_i^Q}{p_i^d} \right)^{\sigma_Q} Q_i$ & $Z_i=\lambda^z_i \cdot (Q_i+E_i)$\\
+		\textbf{eq18} & \textbf{Armington function} & $Q_i = scQ_i (\alpha^m_i M_i^{\rho_Q} + \alpha^d_i D_i^{\rho_Q}  )^{1/\rho_Q} $ &  $p_i^Q Q_i + p_i^e E_i $ \\
+		  &  &   &  $= p^m_i M_i + p^d_i D_i$ \\
+		\textbf{eq19} & \textbf{Imports demand} & $M_i = \left( scQ_i^{\rho_Q} \cdot \alpha_i^m \cdot \frac{p_i^Q}{p_i^m} \right)^{\sigma_Q} Q_i$ & $M_i=\lambda^m_i ~ (Q_i+E_i)$\\
+		\textbf{eq20}  & \textbf{Domestic demand} & $D_i = \left( scQ_i^{\rho_Q} \cdot \alpha_i^d \cdot \frac{p_i^Q}{p_i^d} \right)^{\sigma_Q} Q_i$ & $Z_i=\lambda^z_i ~ (Q_i+E_i)$\\
 		eq21 & CET function & $Z_i = E_i + D_i$ & $idem$ \\
 		eq22 & Supply of E & $p_i^e = p_i^z $ & $idem$ \\
 		eq23 & Supply of D & $p_i^d = p_i^z  $ & $idem$ \\
