@@ -70,7 +70,7 @@ We take the value of $0.08$ for coal and $0.05$ for nuclear - for both ramp-up a
 
 \subsubsection{Model limitation}
 
-This model was design to model the French power system from 2014 to 2050, optimizing investment and dispatch over many assumptions on nuclear costs. As such, it had to make several simplifying assumptions.
+This model was designed to represent the French power system from 2014 to 2050, optimizing investment and dispatch over many assumptions on nuclear costs. As such, it had to make several simplifying assumptions.
 
 This model does not provide a detailed representation of infra-hourly events. In particular, ancillary services are not represented. 
 
@@ -117,13 +117,13 @@ The model is calibrated using capital cost, fixed O\&M and variable O\&M costs. 
 	\small
 	\begin{tabular}{llllllllllll}
 		\toprule
-		 Year & onshore & PV & Coal & CCGT & TAC & river & lake & pump & nuc\_hist & nuc\_renov & nuc\_new \\
+		 Year & onshore & PV & Coal & CCGT & TAC & river & lake & pump  \\
 		\midrule
-		2014 & 1650 & 1560 & 1500 & 800 & 400 & 3000 & 2000 & 2000 & 1320 & 1938 & 6000 \\
-		2020 & 1572 & 1194 & 1500 & 800 & 400 & 3000 & 2000 & 2000 & 1320 & 1938 & 6000 \\
-		2030 & 1443 & 869 & 1500 & 800 & 400 & 3000 & 2000 & 2000 & 1320 & 1938 & 6000 \\
-		2040 & 1313 & 735 & 1500 & 800 & 400 & 3000 & 2000 & 2000 & 1320 & 1938 & 6000 \\
-		2050 & 1184 & 600 & 1500 & 800 & 400 & 3000 & 2000 & 2000 & 1320 & 1938 & 6000 \\
+		2014 & 1650 & 1560 & 1500 & 800 & 400 & 3000 & 2000 & 2000  \\
+		2020 & 1572 & 1194 & 1500 & 800 & 400 & 3000 & 2000 & 2000 \\
+		2030 & 1443 & 869 & 1500 & 800 & 400 & 3000 & 2000 & 2000  \\
+		2040 & 1313 & 735 & 1500 & 800 & 400 & 3000 & 2000 & 2000 \\
+		2050 & 1184 & 600 & 1500 & 800 & 400 & 3000 & 2000 & 2000 \\
 		\bottomrule
 	\end{tabular}
 \end{adjustbox}
@@ -158,12 +158,12 @@ The model is calibrated using capital cost, fixed O\&M and variable O\&M costs. 
 		\toprule
 		Year & \coo\ price & & \\
 		\midrule
-		& Central & Low & High \\
-		2014 & 21 & 10 & 42 \\
-		2020 & 28 & 14 & 56 \\
-		2030 & 50 & 25 & 100 \\
-		2040 & 75 & 38 & 150 \\
-		2050 & 100 & 50 & 200 \\
+		& Low & High \\
+		2014 & 21 & 42 \\
+		2020 & 28 & 56 \\
+		2030 & 50 & 100 \\
+		2040 & 75 & 150 \\
+		2050 & 100 & 200 \\
 		\bottomrule
 	\end{tabular}
 \end{table}
@@ -202,8 +202,7 @@ The model is calibrated using capital cost, fixed O\&M and variable O\&M costs. 
 
 \subsubsection{Plausible costs of retrofitted plants}
 
-
-\begin{table}
+\begin{table}[!htp]
 	\centering
 	\caption{Historical values of French nuclear plants in the literature, in the best case}
 	\label{tab:historical_costs}
@@ -211,7 +210,7 @@ The model is calibrated using capital cost, fixed O\&M and variable O\&M costs. 
 		\toprule
 		Item & Cost & Unit & Source \\
 		\midrule
-		Historical OPEX & 13.3 & euro/MWh & Boccard, 2014 \\
+		Historical OPEX (excluding fuel) & 13.3 & euro/MWh & Boccard, 2014 \\
 		Fuel & 5.7 & euro/MWh & Cour des Comptes, 2014, p. 13 \\
 		Waste & 3.6 &  & Cour des Comptes, 2014, p. 24 \\
 		Decommissioning & 1 &  & Cour des Comptes, 2014, p. 24 \\
@@ -223,7 +222,7 @@ The model is calibrated using capital cost, fixed O\&M and variable O\&M costs. 
 \end{table}
 
 
-\begin{table}
+\begin{table}[!htp]
 	\centering
 	\caption{Retrofit costs according to EDF}
 	\label{tab:costs_grand_carenage}
@@ -238,7 +237,7 @@ The model is calibrated using capital cost, fixed O\&M and variable O\&M costs. 
 \end{table}
 
 
-\begin{table}
+\begin{table}[!htp]
 	\centering
 	\caption{Sensitivity tests}
 	\label{tab:sensitivity_tests}
@@ -257,12 +256,12 @@ The model is calibrated using capital cost, fixed O\&M and variable O\&M costs. 
 	\end{tabular}
 \end{table}
 
-
+\clearpage
 
 \subsubsection{Strategies examined}
 \label{sec:strategies_examined}
 
-\begin{figure}[!ht]
+\begin{figure}[!htp]
 	\centering
 	\includegraphics[height=7cm]{figures/strategies.png}
 	\caption{Nuclear capacity of existing plants, including retrofit, in the 27 strategies}
@@ -271,10 +270,13 @@ The model is calibrated using capital cost, fixed O\&M and variable O\&M costs. 
 
 \clearpage
 
-\begin{table}
+The first period includes all reactors that reach 40 years before 2021, which represents 14 reactors. The second period includes all the reactors reaching 40 years between 2021 and 2025, which represent 23 additional reactors. The final period goes up to 2050 and represents the remaining 21 reactors.
+
+\begin{table}[!hb]
 	\centering
 	\caption{Share of retrofitted nuclear plants in each period}
 	\label{tab:shareNukeRetrofit}
+	\small
 	\begin{tabular}{llll}
 		\toprule
 		Strategy & Period1 & Period2 & Period3 \\
@@ -310,31 +312,31 @@ The model is calibrated using capital cost, fixed O\&M and variable O\&M costs. 
 	\end{tabular}
 \end{table}
 
-The first period includes all reactors that reach 40 years before 2021, which represents 14 reactors. The second period includes all the reactors reaching 40 years between 2021 and 2025, which represent 23 addditional reactors. The final period goes up to 2050 and represents the remaining 21 reactors.
+\clearpage
+
 \subsubsection{Optimum power mixes}
 \label{app:optimumMixes}
 
-
-\begin{figure}
+\begin{figure}[!htp]
 	\centering
 	\subfloat[Optimum for retrofitted nuclear below or equal to 40 \emwh] {
-		\includegraphics[width=7cm]{figures/powerMix_R40N100MedD.png}
+		\includegraphics[height=6.5cm]{figures/powerMix_R40N100MedD.png}
 		\label{fig:nukeShare40}
 	}
 	\subfloat[Optimum for retrofitted nuclear around 70 \emwh] {
-		\includegraphics[width=7cm]{figures/powerMix_R70N100MedD.png}
+		\includegraphics[height=6.5cm]{figures/powerMix_R70N100MedD.png}
 		\label{fig:nukeShare70}
 	}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[!htp]
 	\centering
 		\subfloat[Optimum for retrofitted nuclear around 80 \emwh] {
-		\includegraphics[height=8cm]{figures/powerMix_R80N100MedD.png}
+		\includegraphics[height=6.5cm]{figures/powerMix_R80N100MedD.png}
 		\label{fig:nukeShare80}
 	}
 	\subfloat[Optimum for retrofitted nuclear around 90 \emwh] {
-		\includegraphics[height=8cm]{figures/powerMix_R90N100MedD.png}
+		\includegraphics[height=6.5cm]{figures/powerMix_R90N100MedD.png}
 		\label{fig:nukeShare90}
 	}
 	\caption{Optimum power mix for various nuclear retrofitting costs}
@@ -356,20 +358,18 @@ The first period includes all reactors that reach 40 years before 2021, which re
 \subsubsection{Analysis with PRIM}
 
 
-\subsubsection{Choice of threshold}
+%\paragraph{Choice of threshold}
 
-\begin{figure}
+\begin{figure}[!htp]
 	\centering
 	\includegraphics[width=6cm]{figures/quantile_regret.pdf}
 	\caption{Ordered distribution of regret for the three candidate strategies S9, S24 and S18}
 	\label{fig:quantile_regret}
 \end{figure}
 
+%\paragraph{Efficiency frontier}
 
-
-\subsubsection{Efficiency frontier}
-
-\begin{figure}
+\begin{figure}[!htp]
 	\centering
 	\subfloat[With the cluster from S9] {
 		\includegraphics[width=6cm]{figures/low_regret_frontier_S9.pdf}
@@ -382,10 +382,8 @@ The first period includes all reactors that reach 40 years before 2021, which re
 \end{figure}
 
 
-\subsubsection{Regrets of the strategies S9, S18 and S27}
-
-
-\begin{figure}
+%\paragraph{Regrets of the strategies S9, S18 and S27}
+\begin{figure}[!ht]
 	\centering
 	\subfloat[Regret of the full-retrofit strategy S27] {
 		\makebox[5.5cm][c]{\includegraphics[height=5cm]{figures/vulnerabilities_S27.pdf}}
@@ -401,10 +399,8 @@ The first period includes all reactors that reach 40 years before 2021, which re
 	}
 	\caption{Regret of the full-retrofit strategy S9, S18 and S27}
 \end{figure}
-
-\subsubsection{Optimal trajectory depending on implicit probabilities}
-
-\begin{figure}
+%\paragraph{Optimal trajectory depending on implicit probabilities}
+\begin{figure}[!h]
 	\centering
 	\subfloat[With the cluster from strategy S9] {
 		\includegraphics[width=6cm]{figures/odds_S9.pdf}	
@@ -421,7 +417,7 @@ The first period includes all reactors that reach 40 years before 2021, which re
 \clearpage
 \subsubsection{Comparison with official scenarios}
 
-\begin{figure}
+\begin{figure}[!htp]
 	\centering
 	\subfloat[Nuclear share (\%)] {
 		\includegraphics[height=6cm]{figures/dnte_nuc_shares.pdf}
