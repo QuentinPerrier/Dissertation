@@ -1,5 +1,7 @@
 # An open-source PhD Template
 
+[![License](https://img.shields.io/badge/license-AGPL-FBB829.svg)](https://www.gnu.org/licenses/agpl-3.0.html)
+
 Works with MAC, Windows and Linux.
 
 Get your PhD ready in five simple steps:
@@ -11,8 +13,8 @@ Get your PhD ready in five simple steps:
 
 [Here is an example](https://s3.eu-central-1.amazonaws.com/qperrier/dissertation.pdf).
 
-To compile, use xelatex, biblatex and biber. These are easily configurable with the IDE [TexStudio](http://twitter.com).
+To compile, use xelatex (not pdflatex), biblatex (not natbib) and biber (not bibtex). These are easily configurable with the IDE [TexStudio](http://www.texstudio.org).
 For the bibliography, run the .tex file, then run Bibliography, then run the .tex twice. 
 
-Acknoledgments: this work was built from the template make by [Jordan Suchow](https://github.com/suchow/).
+Acknoledgments: this work was built from the template make by [Jordan Suchow](https://github.com/suchow/Dissertate).
 

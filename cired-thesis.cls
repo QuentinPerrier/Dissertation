@@ -21,9 +21,16 @@
 \RequirePackage{csquotes} %added
 \RequirePackage{babel}
 \RequirePackage{graphicx}
+
+\RequirePackage{tabularx}%for the image on front page
+\renewcommand{\tabularxcolumn}[1]{m{#1}}
+
+
 \RequirePackage[hyphens]{url}
 \RequirePackage[linktoc=all]{hyperref}
 \RequirePackage{appendix}
+\RequirePackage{wrapfig}
+
 
 % colors
 \RequirePackage{xcolor}
@@ -147,15 +154,14 @@ BoldItalicFont=Arno Pro Bold Italic]{Arno Pro}
 \makenomenclature
 \renewcommand{\nomname}{Acronyms}
 
-
-
 % some definitions
 \def\degreeyear#1{\gdef\@degreeyear{#1}}
-\def\degreemonth#1{\gdef\@degreemonth{#1}}
+\def\defensedate#1{\gdef\@defensedate{#1}}
 \def\jurycomposition#1{\gdef\@jurycomposition{#1}}
 \def\degree#1{\gdef\@degree{#1}}
 \def\advisor#1{\gdef\@advisor{#1}}
 \def\department#1{\gdef\@department{#1}}
+\def\researchcenter#1{\gdef\@researchcenter{#1}}
 \def\field#1{\gdef\@field{#1}}
 \def\university#1{\gdef\@university{#1}}
 \def\universitycity#1{\gdef\@universitycity{#1}}
@@ -167,36 +173,54 @@ BoldItalicFont=Arno Pro Bold Italic]{Arno Pro}
 \renewcommand{\maketitle}{ 
 	\singlespacing
 	\thispagestyle{empty}
+
 	\begin{center}
-	\includegraphics[height=3cm]{frontmatter/logo_ehess.png}\\
-	%\hspace{15em}
-	\vspace*{\fill} 
-	%\vspace{30pt} 
+		
+
+	  \begin{tabularx}{\linewidth}{@{}lX@{}}
+		\raisebox{-0.2\height}{\includegraphics[height=1.6cm]{frontmatter/logo_ehess.png}}&
+		\raggedright\small% Your font (size) choice\\
+			\Large \@university\\
+			\normalsize
+			\vspace{2pt}
+			\@department
+
+	\end{tabularx}
+
+\@researchcenter
+\vspace{15pt}
+
+	\vspace{12pt}
+	\Large
+	\@degree\\
+	\vspace{8pt}
+	Discipline : \@field \\
+	\vspace{25pt}
+	\Large \sc	\theauthor \\ 
+	\vspace{25pt} 
 	\foreignlanguage{french}{
 	\Huge \sc \@frenchtitle \\
 	}
-	\vspace{30pt}
-	\Large \sc \thetitle \\ 
-	\vspace{30pt}
+	\vspace{22pt}
+	%\Large \sc \thetitle \\ 
+	\vspace{27pt}
 	\singlespacing
-	\large
-	\foreignlanguage{french}{Thèse présentée par\\ \theauthor\\ 
-	\vspace{8pt}
-	pour obtenir le grade de \@degree\\
-	de \@university \\
-	\vspace{4pt}
-	Discipline : \@field\\
-	\vspace{4pt}
-	%Thèse dirigée par \@advisor\\
-	}
     \normalsize
-	%\vspace{8pt}
-	\end{center} \vspace*{\fill}
+    Thèse dirigée par \textbf{\@advisor}\\
+	\vspace{10pt}
+    Date de soutenance : le \@defensedate\\	
+    \vspace*{\fill}
 	%Soutenue le \@degreemonth\ \@degreeyear\ devant un jury composé de :\\
 	Soutenue devant un jury composé de :\\
-	\textnormal{
-	\@jurycomposition\
-	}
+	\vspace{6pt}
+	%\doublespacing
+	% or:
+	\onehalfspacing
+
+		\textnormal{
+		\@jurycomposition\
+		}
+	\end{center}
 }
 
 % You might also consider licensing your work under Creative Commons). See: http://creativecommons.org/weblog/entry/12824 for other PhD students who have released their work under creative commons.
