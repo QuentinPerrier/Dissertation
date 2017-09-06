@@ -24,6 +24,7 @@
 
 \RequirePackage{tabularx}%for the image on front page
 \renewcommand{\tabularxcolumn}[1]{m{#1}}
+%\RequirePackage{makecell}
 
 
 \RequirePackage[hyphens]{url}
@@ -187,6 +188,15 @@ BoldItalicFont=Arno Pro Bold Italic]{Arno Pro}
 
 	\end{tabularx}
 
+%\begin{table}
+%\centering
+%\begin{tabular}{ c c }
+%  \raisebox{-0.5\height}{\includegraphics[height=1.6cm]{frontmatter/logo_ehess.png}} & 
+%\thead{\Large \@university \huge \\  \\ \normalsize  \@department}
+%   \\
+%  \end{tabular}
+%\end{table}
+
 \@researchcenter
 \vspace{15pt}
 
@@ -218,7 +228,7 @@ BoldItalicFont=Arno Pro Bold Italic]{Arno Pro}
 	\onehalfspacing
 
 		\textnormal{
-		\@jurycomposition\
+		\@jurycomposition
 		}
 	\end{center}
 }
@@ -249,9 +259,9 @@ BoldItalicFont=Arno Pro Bold Italic]{Arno Pro}
 	\newpage
 	\pagenumbering{roman}
 	\setcounter{page}{3}
-	\pagestyle{fancy}
-		\foreignlanguage{french}{
-		\lhead{Directeur de th\`{e}se: \@advisor} \rhead{\@author}}
+	%\pagestyle{fancy}
+		%\foreignlanguage{french}{
+		%\lhead{Directeur de th\`{e}se: \@advisor} \rhead{\@author}}
 	\renewcommand{\headrulewidth}{0.0pt} 
 	\begin{center}
 	\vspace*{1pt}
