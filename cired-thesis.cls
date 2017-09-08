@@ -384,4 +384,11 @@ BoldItalicFont=Arno Pro Bold Italic]{Arno Pro}
 	
 
 
+% Personal commands
 
+\newcommand\coo{CO\textsubscript{2}}
+\newcommand\emwh{\euro/MWh}
+\newcommand\lcoe{\textsc{lcoe}}
+\newcommand\dnte{\textsc{dnte}}
+\newcommand\lcoen{\lcoe$_\text{N}$}
+ \newcommand\lcoer{\lcoe$_\text{R}$}
