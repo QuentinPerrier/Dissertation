@@ -179,7 +179,7 @@ BoldItalicFont=Arno Pro Bold Italic]{Arno Pro}
 		
 
 	  \begin{tabularx}{\linewidth}{@{}lX@{}}
-		\raisebox{-0.2\height}{\includegraphics[height=1.6cm]{frontmatter/logo_ehess.png}}&
+		\raisebox{-0.2\height}{\includegraphics[height=1.4cm]{frontmatter/logo_ehess.png}}&
 		\raggedright\small% Your font (size) choice\\
 			\Large \@university\\
 			\normalsize
@@ -201,10 +201,9 @@ BoldItalicFont=Arno Pro Bold Italic]{Arno Pro}
 \vspace{15pt}
 
 	\vspace{12pt}
-	\Large
-	\@degree\\
+	\Large \sc	\@degree\\
 	\vspace{8pt}
-	Discipline : \@field \\
+	\textnormal{ Discipline :  \@field } \\
 	\vspace{25pt}
 	\Large \sc	\theauthor \\ 
 	\vspace{25pt} 
