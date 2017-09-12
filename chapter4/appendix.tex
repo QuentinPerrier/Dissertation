@@ -117,7 +117,7 @@ But the computation of the employment content shows that the domestic employment
 \label{app:closed_economy}
 
 \subsubsection{Overview of the closed model}
-\begin{figure}[!h]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[height=7cm]{figures/overview_closed.pdf}
 	\caption{Overview of the closed economy model for the S2 sector}
@@ -184,7 +184,7 @@ With this assumption, we check that all prices have increased by 10\%, and volum
 \label{app:two_labour_model}
 
 \subsubsection{Overview of the simple CGE with two labor skills}
-\begin{figure}[!h]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[height=8cm]{figures/overview_twoLabors.pdf}
 	\caption{Overview of the open economy model for the S2 sector}
@@ -210,7 +210,7 @@ With this assumption, we check that all prices have increased by 10\%, and volum
 \label{app:open_economy_model}
 
 \subsubsection{Overview of the open economy}
-\begin{figure}[!h]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[height=8cm]{figures/overview_open.pdf}
 	\caption{Overview of the open economy model for the S2 sector}
@@ -269,10 +269,10 @@ With this assumption, we check that all prices have increased by 10\%, and volum
 \end{itemize}
 
 
-\subsubsection{Results for IO anc CGE}
+\subsubsection{Results for IO and CGE}
 \label{subsec:open_economy_results}
 
-\begin{table}[!h]
+\begin{table}[!ht]
 	\centering
 	\caption{SAM results in an open economy with our IO model}
 	\label{tab:SAM_IO_openEconomy}
@@ -290,7 +290,7 @@ With this assumption, we check that all prices have increased by 10\%, and volum
 \end{table}
 
 
-\begin{table}[!h]
+\begin{table}[!ht]
 	\centering
 	\caption{Open economy with fixed exchange rate $\epsilon$ and endogenous imports}
 	\label{tab:SAM_IO_OpenEconomy_noBudget}
@@ -330,7 +330,7 @@ At the 64-sector level of disaggregation, we encounter some issues to calibrate 
 
 \subsubsection{Overview of the full CGE model}
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=14cm]{figures/overview_full.pdf}
 	\caption{Overview of the fully-fledged model for the S2 sector}
@@ -429,7 +429,7 @@ At the 64-sector level of disaggregation, we encounter some issues to calibrate 
 
 
 
-\begin{table}[!h]
+\begin{table}[!ht]
 	\centering
 	\caption{Comparative equations of IO and CGE models. Identical equations are not repeated to facilitate reading. The main differences with the closed version shown in table \ref{tab:closedModel} have their equations labeled in bold.}
 	\label{tab:fullModel}
@@ -483,11 +483,9 @@ At the 64-sector level of disaggregation, we encounter some issues to calibrate 
 
 \clearpage
 
-\subsubsection{Results}
-
 \subsubsection{Cobb-Douglas elasticity vs Empirical estimates}
 
-\begin{table}[!h]
+\begin{table}[!ht]
 	\centering
 	\caption{Comparing job creation using CES vs Cobb-Douglas \\\hspace{\textwidth} (for a wage curve elasticity $\gamma$=0.1, $\sigma_{Armington}$ =2  and $\psi_{CET}$=2)}
 	\label{tab:CobbDouglasError}
@@ -514,21 +512,21 @@ Weatherization & 0.6 & 5026 & 4135 & -18 \\
 
 \subsubsection{Trade}
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[height=4cm]{figures/Armington.pdf}
 	\caption{Impact of the Armington elasticity (with CET elasticity equal to two)}
 	\label{fig:armington}
 \end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[height=4cm]{figures/CET.pdf}
 	\caption{Impact of the CET elasticity (with Armington elasticity equal to two)}
 	\label{fig:cet}
 \end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[height=4cm]{figures/closure.pdf}
 	\caption{Impact of the trade closure rule}
@@ -541,10 +539,10 @@ Weatherization & 0.6 & 5026 & 4135 & -18 \\
 \begin{table}
 	\small
 	\centering
-	\caption{Full sensitivity analysis for solar}
-	\begin{tabular}{llllllll}
+	\caption{Full sensitivity analysis for solar }
+	\begin{tabular}{cccccccc}
 		\toprule
-		Techno & gamma & sigma KL & Sigma Armington & Psi CET & CGE Value & IO Value & Ratio \\
+		Techno & $\gamma$ & $\sigma_{KL}$ & $\sigma_{\text{Armington}}$ & $\psi_{\text{CET}}$ & Jobs in CGE &Jobs in IO & Ratio \\
 		\midrule
 		Solar & 0.1 & 0.2 & 1.5 & 1.5 & 6035 & 5010 & 0.83 \\
 		Solar & 0.1 & 0.2 & 1.5 & 2 & 5945 & 5010 & 0.84 \\
@@ -602,10 +600,9 @@ Weatherization & 0.6 & 5026 & 4135 & -18 \\
 	\small
 		\centering
 		\caption{Full sensitivity analysis for weatherization}
-		\
-		\begin{tabular}{llllllll}
+		\begin{tabular}{cccccccc}
 		\toprule
-		Techno & gamma & sigma KL & Sigma Armington & Psi CET & CGE Value & IO Value & Ratio \\
+			Techno & $\gamma$ & $\sigma_{KL}$ & $\sigma_{\text{Armington}}$ & $\psi_{\text{CET}}$ & Jobs in CGE &Jobs in IO & Ratio \\
 		\midrule
 		Weatherization & 0.1 & 0.2 & 1.5 & 1.5 & 6782 & 8050 & 1.19 \\
 		Weatherization & 0.1 & 0.2 & 1.5 & 2 & 6684 & 8050 & 1.20 \\

@@ -13,8 +13,8 @@ Get your PhD ready in five simple steps:
 
 [Here is an example](https://s3.eu-central-1.amazonaws.com/qperrier/dissertation.pdf).
 
-To compile, use xelatex (not pdflatex), biblatex (not natbib) and biber (not bibtex). These are easily configurable with the IDE [TexStudio](http://www.texstudio.org).
-For the bibliography, run the .tex file, then run Bibliography, then run the .tex twice. 
+To compile, use xelatex (not pdflatex) and biber (not bibtex). These are easily configurable with the IDE [TexStudio](http://www.texstudio.org). 
+For bibliography, this class uses biblatex (not natbib). As usual, to display bibliography properly, run the .tex file, then run Bibliography to generate the .bbl file, then run the .tex twice. 
 
 Acknoledgments: this work was built from the template make by [Jordan Suchow](https://github.com/suchow/Dissertate).
 
