@@ -16,6 +16,7 @@
 \LoadClass[12pt, twoside, openright, a4paper]{book}
 
 % Required packages
+%\RequirePackage[a-1b]{pdfx} % to generate archivable pdf/A formats. May generate errors
 %\usepackage[utf8]{inputenc} 
 %\usepackage[T1]{fontenc}
 \RequirePackage{csquotes} %added
@@ -99,7 +100,7 @@
 %\nobibliography*        
 
 \RequirePackage{lettrine} % big letter at start of chapter
-\RequirePackage[width=5in, a4paper, hmarginratio=3:2]{geometry} %the hmargin is used to reverse the margin on odd and even pages
+\RequirePackage[width=5in, a4paper, hmarginratio=3:2, headheight=15pt]{geometry} %the hmargin is used to reverse the margin on odd and even pages
 
 \RequirePackage{fancyhdr} 
 \pagestyle{plain} % options: empty , plain , fancy
@@ -113,7 +114,7 @@
 \RequirePackage{titling}
 \RequirePackage{setspace} 
 \RequirePackage{booktabs} % for much better looking tables
-\RequirePackage[labelfont={sf,bf,small},textfont={sf,small},margin=0pt, figurewithin=chapter, tablewithin=chapter]{caption}
+\RequirePackage[labelfont={bf,small},textfont={small},margin=0pt, figurewithin=chapter, tablewithin=chapter]{caption}
 \onehalfspacing
 %\raggedright
 
