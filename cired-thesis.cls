@@ -100,7 +100,7 @@
 %\nobibliography*        
 
 \RequirePackage{lettrine} % big letter at start of chapter
-\RequirePackage[width=5in, a4paper, hmarginratio=3:2, headheight=15pt]{geometry} %the hmarginratio=3:2 or 2:3 is used to reverse the margin on odd and even pages
+\RequirePackage[width=5in, a4paper, hmarginratio=1:1, headheight=15pt]{geometry} %the hmarginratio=3:2 or 2:3 is used to reverse the margin on odd and even pages
 %3:2 is better for printing; 1:1 for reading on screen
 
 \RequirePackage{fancyhdr} 
